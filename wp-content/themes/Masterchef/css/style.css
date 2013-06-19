@@ -14,6 +14,10 @@
   font-style: normal;
   font-weight: 700; }
 
+/* line 53, ../scss/foundation/_variables.scss */
+.timeline-header, .timeline-footer {
+  background: red; }
+
 /* line 241, ../scss/foundation/_global.scss */
 *,
 *:before,
