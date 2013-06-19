@@ -1,0 +1,76 @@
+//
+// Foundation Variables
+//
+
+
+@mixin bp($point) {
+  @if $point == big {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+  @else if $point == med {
+   @media only screen and (min-width: 400px) { @content; }
+  }
+}
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Square721';
+  src: url('fonts/square721-bdex-bt-bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/square721-bdex-bt-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/square721-bdex-bt-bold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/square721-bdex-bt-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/square721-bdex-bt-bold.svg#055d5469f7bae20fed169a781d5e1686') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// for compatibility with browser-based text zoom or user-set defaults.
+$base-font-size: 100% !default;
+
+// $base-line-height is 24px while $base-font-size is 16px
+// $base-line-height: 150%;
+
+// This is the default html and body font-size for the base em value.
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be a different size and not have it effect grid size too,
+// set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
+$em-base: 16px !default;
+
+// Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px)
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+// Change whether or not you include browser prefixes
+// $experimental: true;
+
+// Various global styles
+
+$default-float: left;
+
+ $body-bg: url(../img/Background.jpg) repeat;
+
+// Masterchef Brand Colours:
+
+$mcred: rgb(176,28,46);
+$mcorange: rgb(242,125,0);
+$mcgrey: rgb(135,135,133);
+$mcbrown: rgb(79,38,8);
+
+
+// Colors
+
+$primary-color: #111;
+$secondary-color: $mcgrey;
+
+
