@@ -54,4 +54,4 @@
   </div>
   
   <!-- Start the main container -->
-  <section class="container row" role="document">
+  <section class="main-content container row" role="document">
