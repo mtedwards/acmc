@@ -1,7 +1,13 @@
 .alignright {
 	float: right;
-	margin: 0 0 1em 1em;
+	margin: 0 0 $padding $padding;
 }
+
+.alignleft {
+	float: left;
+	margin: 0 $padding $padding 0;
+}
+
 
 .left {
   float: left !important; }
@@ -25,12 +31,16 @@
   display: none; }
 
 .antialiased {
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased; 
+  }
 
 
 img {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle; 
+  padding-bottom: $padding;
+  
+  }
 
 
 textarea {
@@ -41,5 +51,5 @@ select {
   width: 100%; }
   
 body {
- background: url(../img/Background.jpg) repeat;
+ background: $body-bg;
 }

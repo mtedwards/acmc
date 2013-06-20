@@ -5,12 +5,12 @@ div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td {
 
 /* Default Link Styles */
 a {
-  color: #111111;
+  color: $mcgrey;
   text-decoration: none;
   line-height: inherit;
 
   &:hover, &:focus {
-    color: #040404; }
+    color: $primary-color; }
 
   img {
     border: none; }
@@ -19,10 +19,13 @@ a {
 
 
 p {
-  font-family: "Square721", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: $body-text;
+  font-weight: 300;
+  font-size: $base-font-size;
+  @include bp(big){
+    font-size:$big-screen-font-size;
+  }
+  line-height: 1.5em;
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility; 
   
@@ -35,8 +38,8 @@ p {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Square721", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $heading-text;
+  font-weight: 300;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -70,6 +73,7 @@ h5 {
 h6 {
   font-size: 1em; }
 
+/*
 @media only screen and (min-width: 768px) {
   
   h1, h2, h3, h4, h5, h6 {
@@ -87,6 +91,7 @@ h6 {
   h4 {
     font-size: 1.4375em; } 
 }
+*/
 
 
 

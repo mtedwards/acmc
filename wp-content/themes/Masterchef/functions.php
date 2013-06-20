@@ -56,4 +56,22 @@ function reverie_entry_meta() {
 	echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. sprintf(__('Posted on %s at %s.', 'reverie'), get_the_time('l, F jS, Y'), get_the_time()) .'</time>';
 	echo '<p class="byline author">'. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p>';
 }
-?>
+
+
+// Register Talent post type
+register_post_type('talent', array(	'label' => 'Talent','description' => '','public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post','hierarchical' => false,'rewrite' => array('slug' => ''),'query_var' => true,'has_archive' => true,'exclude_from_search' => false,'supports' => array('title','editor','excerpt','revisions','thumbnail',),'labels' => array (
+  'name' => 'Talent',
+  'singular_name' => 'Talent',
+  'menu_name' => 'Talent',
+  'add_new' => 'Add Talent',
+  'add_new_item' => 'Add New Talent',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Talent',
+  'new_item' => 'New Talent',
+  'view' => 'View Talent',
+  'view_item' => 'View Talent',
+  'search_items' => 'Search Talent',
+  'not_found' => 'No Talent Found',
+  'not_found_in_trash' => 'No Talent Found in Trash',
+  'parent' => 'Parent Talent',
+),) );

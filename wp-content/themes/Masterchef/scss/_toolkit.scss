@@ -1,0 +1,14 @@
+// General Style used accross the site
+
+.module {
+  background: #fff;
+  padding: $padding;
+  position: relative;
+}
+
+.contact-buttons {
+  float:right;
+  width: 50%;
+  outline: 1px solid red;
+  margin: 0 0 $padding $padding;
+}

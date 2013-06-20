@@ -16,21 +16,17 @@
   font-family: 'entypo', sans-serif;
 }
 
-@font-face {
-  font-family: 'Square721';
-  src: url('fonts/square721-bdex-bt-bold.eot'); /* IE9 Compat Modes */
-  src: url('fonts/square721-bdex-bt-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/square721-bdex-bt-bold.woff') format('woff'), /* Modern Browsers */
-       url('fonts/square721-bdex-bt-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/square721-bdex-bt-bold.svg#055d5469f7bae20fed169a781d5e1686') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  700;
-}
+//fonts
+
+$heading-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ 
+$body-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 
 
 $base-font-size: 16px;
-$em-base: 16px !default;
+
+$big-screen-font-size: 12px;
 
 @function emCalc($pxWidth) {
   @return $pxWidth / $em-base * 1em;
