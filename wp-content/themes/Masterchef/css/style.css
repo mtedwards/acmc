@@ -1398,7 +1398,8 @@ header.mainhead {
   margin: 0; }
 /* line 39, ../scss/_talent.scss */
 .boxes article .small-details {
-  padding: 10px; }
+  padding: 10px;
+  position: relative; }
   /* line 41, ../scss/_talent.scss */
   .boxes article .small-details p {
     margin: 0;
@@ -1406,14 +1407,35 @@ header.mainhead {
   /* line 42, ../scss/_talent.scss */
   .boxes article .small-details b {
     color: #111111; }
-/* line 46, ../scss/_talent.scss */
+  /* line 44, ../scss/_talent.scss */
+  .boxes article .small-details:after {
+    font-family: 'entypo', sans-serif;
+    content: '\E766';
+    color: #111111;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    font-size: 1.5em;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+/* line 56, ../scss/_talent.scss */
+.boxes article a:hover .small-details:after {
+  right: 6px; }
+/* line 60, ../scss/_talent.scss */
 .boxes article.current {
   margin-bottom: 0;
   border-bottom: 20px solid white; }
-/* line 51, ../scss/_talent.scss */
+  /* line 63, ../scss/_talent.scss */
+  .boxes article.current .small-details:after {
+    font-family: 'entypo', sans-serif;
+    content: '\2716';
+    right: 12px; }
+/* line 70, ../scss/_talent.scss */
 .boxes article div.details {
   display: none; }
-/* line 55, ../scss/_talent.scss */
+/* line 74, ../scss/_talent.scss */
 .boxes .content {
   clear: both;
   background: #fff;
@@ -1427,27 +1449,27 @@ header.mainhead {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
-/* line 67, ../scss/_talent.scss */
+/* line 86, ../scss/_talent.scss */
 .boxes .content.open {
   max-height: 1000px;
   padding: 20px;
   opacity: 1; }
   @media only screen and (min-width: 400px) {
-    /* line 67, ../scss/_talent.scss */
+    /* line 86, ../scss/_talent.scss */
     .boxes .content.open {
       margin: 0 2% 10px 0; } }
   @media only screen and (min-width: 768px) {
-    /* line 67, ../scss/_talent.scss */
+    /* line 86, ../scss/_talent.scss */
     .boxes .content.open {
       margin: 0 3% 10px 0; } }
 
-/* line 81, ../scss/_talent.scss */
+/* line 100, ../scss/_talent.scss */
 .filters {
   margin: 20px 0; }
-  /* line 83, ../scss/_talent.scss */
+  /* line 102, ../scss/_talent.scss */
   .filters a {
     padding-right: 20px;
     color: #878785; }
-    /* line 86, ../scss/_talent.scss */
+    /* line 105, ../scss/_talent.scss */
     .filters a:hover, .filters a.active-filter {
       color: #111111; }

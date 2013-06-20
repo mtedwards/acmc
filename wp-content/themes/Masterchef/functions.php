@@ -57,6 +57,13 @@ function reverie_entry_meta() {
 	echo '<p class="byline author">'. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p>';
 }
 
+// Custom Readmore link on Excerpt
+
+function new_excerpt_more( $excerpt ) {
+	return str_replace( '[...]', '...', $excerpt );
+}
+add_filter( 'wp_trim_excerpt', 'new_excerpt_more' );
+
 
 // Register Talent post type
 register_post_type('talent', array(	'label' => 'Talent','description' => '','public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post','hierarchical' => false,'rewrite' => array('slug' => ''),'query_var' => true,'has_archive' => true,'exclude_from_search' => false,'supports' => array('title','editor','excerpt','revisions','thumbnail',),'labels' => array (

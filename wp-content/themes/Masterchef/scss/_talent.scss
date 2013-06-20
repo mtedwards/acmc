@@ -40,12 +40,31 @@
     padding: 0.5*$padding;
     p {margin: 0; padding:0;}
     b {color: $primary-color; }
+    position:relative;
+    &:after {
+      font-family: 'entypo', sans-serif;
+      content:'\E766';
+      color: $primary-color;
+      position: absolute;
+      right: 12px;
+      top: 15px;
+      font-size: 1.5em;
+      @include transition-duration(0.3s);
+    } 
+  } 
   
+  article a:hover .small-details:after {
+    right: 6px;
   }
   
   article.current {
     margin-bottom: 0;
     border-bottom: $padding solid #fff;
+    .small-details:after {
+      font-family: 'entypo', sans-serif;
+      content: '\2716';
+      right:12px;
+    }
   }
   
   article div.details { 
