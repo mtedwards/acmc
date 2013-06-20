@@ -1,3 +1,11 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  
+
 // MIXINS
 
 @mixin bp($point) {
@@ -25,8 +33,14 @@ $body-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Hel
 
 
 $base-font-size: 16px;
+$big-screen-font-size: 13px;
 
-$big-screen-font-size: 12px;
+@mixin basefont {
+  font-size: $base-font-size;
+  @include bp(big) {
+    font-size: $big-screen-font-size;
+  }
+}
 
 @function emCalc($pxWidth) {
   @return $pxWidth / $em-base * 1em;

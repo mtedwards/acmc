@@ -14,16 +14,16 @@
       	 		<h2><?php the_title(); ?></h2>
       	 	</div>
       	 	<div class="small-6 columns text-right">
-      	 		<h2><a href="/talent">Back to Talent</a></h2>
+      	 		<h4><a href="/talent"><span class="entypo-left-open-big"></span> Back to Talent</a></h4>
       	 	</div>  
       	 </div>
       	</header>
       	<div class="entry-content module">
-      	  <?php the_post_thumbnail(); ?>
-      	  <div class="contact-buttons">
-      		  <a href="#" class="button">Button</a>
-      		</div>
-      		<?php the_content(); ?>
+      	  <?php 
+      	   the_post_thumbnail();
+      	   get_template_part('includes/contact-buttons');
+        	 the_content();
+          ?>
       	</div>
       	<hr />
       </article>

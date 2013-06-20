@@ -4,10 +4,11 @@
   line-height: 1em;
   width: 100%;
   padding: 15px 10px;
-  margin: 5px 0;
+  margin: 0 0 5px;
   text-transform: uppercase;
   @include transition-duration(0.5s);
   background: white;
+  color: $primary-color;
   &.white-trans {
     background: rgba(white,0.7);
   }
@@ -35,4 +36,48 @@
       right: 6px;
     }  
   }
+}
+
+.contact-buttons .button {
+  @include basefont;
+  background: $primary-color;
+  color: #fff;
+  font-size: 1em;
+  padding: 1em 0px 1em 4em;
+  
+  &:before {
+    font-family: 'entypo', sans-serif;
+    content:'\F30C';
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    font-size: 1.5em;
+    }
+    
+  &:after, &:before {
+    @include bp(big) {
+      top:12px;
+    }
+  }  
+  
+  &.facebook:before {
+    content:'\F30C';    
+  }
+  
+  &.twitter:before {
+    content:'\F309';
+  } 
+  
+  &.web:before {
+    content:'\27A6';
+  } 
+  
+  &.dimmi:before {
+    content:'\2302';
+  } 
+  
+  &.other:before {
+    content:'\E75B';
+  } 
+  
 }
