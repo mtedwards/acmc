@@ -1,0 +1,105 @@
+.bookings {
+	h3 {
+		width: 100%;
+		text-align: center;
+		color: white;
+		background: $primary-color;
+		margin:0;
+		height: 45px;
+		line-height: 45px;
+		font-size: 1.3em;
+		border-right: 1px solid #eee;
+	}
+	article {
+		display: inline;
+		float:left;
+		width:14.2857%;
+		height:45px;
+		}
+		
+		
+		
+	article {
+		
+		a {
+		  width:100%;
+		  height:45px;
+		  text-align:left;
+		  line-height:45px;
+		  display:block;
+		  font-size:1.3em;
+		  color:$primary-color;
+		  border:1px solid #eee;
+		  background:#fff;
+		  text-decoration:none;
+		  @include transition-property(all);
+		  @include transition-duration(0.5s);
+		  @include transition-timing-function(ease-in);
+		  padding-left: $padding;
+		  
+		  &.select {
+		    background:$primary-color;
+		    border-bottom: 1px solid $primary-color;
+		    color: white;
+		  }
+		 
+		  &:hover {
+		    background:$primary-color;
+		    color:white;
+		    }
+		}
+		
+		&.day a{
+			text-align: center;
+			border: none;
+			background: $primary-color;
+			color: #fff;
+			height: 50px;
+			line-height: 50px;
+		}
+		
+		&.closed a {
+			color: $mcgrey;
+		}
+	}	
+		
+		.today a{
+		  background:$primary-color;
+		}
+		
+		.done {
+		  
+		  a {
+		  background:#555;  
+		  color:$mcgrey;
+		  }
+		}
+		
+		article div {
+		  display:none;
+		}
+		
+		.content.open {
+		  background: $primary-color;
+		  display:block;
+		  clear:both;
+		  padding:$padding;
+		  border-right: 1px solid #eee;
+		  border-left: 1px solid #eee;
+		  color:#fff;
+		  h4 {
+		    font-size: 1.3em;
+		    font-weight: 100;
+		    padding: 0 0 $padding;
+		    margin:0;
+		    color: #fff;
+		  }
+		  h6 {
+		  	  padding: 0;
+			  margin: 0.5*$padding 0;
+			  color: red;
+		  }
+		  
+		  
+		}
+}

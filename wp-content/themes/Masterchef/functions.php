@@ -82,3 +82,47 @@ register_post_type('talent', array(	'label' => 'Talent','description' => '','pub
   'not_found_in_trash' => 'No Talent Found in Trash',
   'parent' => 'Parent Talent',
 ),) );
+
+// Register Custom Post Type
+function custom_post_type() {
+	$labels = array(
+		'name'                => _x( 'Booking Cities', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Booking City', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Bookings', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent City:', 'text_domain' ),
+		'all_items'           => __( 'All Cities', 'text_domain' ),
+		'view_item'           => __( 'View City', 'text_domain' ),
+		'add_new_item'        => __( 'Add New City', 'text_domain' ),
+		'add_new'             => __( 'New City', 'text_domain' ),
+		'edit_item'           => __( 'Edit City', 'text_domain' ),
+		'update_item'         => __( 'Update City', 'text_domain' ),
+		'search_items'        => __( 'Search cities', 'text_domain' ),
+		'not_found'           => __( 'No cities found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'No cities found in Trash', 'text_domain' ),
+	);
+
+	$args = array(
+		'label'               => __( 'bookings', 'text_domain' ),
+		'description'         => __( 'Booking Cities', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'           => '',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+
+	register_post_type( 'bookings', $args );
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'custom_post_type', 0 );

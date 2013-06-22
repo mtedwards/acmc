@@ -13,6 +13,10 @@
     background: rgba(white,0.7);
   }
   
+  &.white {
+	  background: #fff;
+  }
+  
   span {
     font-size: 0.7rem;
     @media (max-width:907px) and (min-width:768px) {
