@@ -1,8 +1,11 @@
 header.mainhead {
-   background: url(../img/slider1.jpg) center top;
-   background-size:cover;
+   position: relative;
+   height: 440px;
+   overflow: hidden;
   .container {
-   
+   position: absolute;
+   top:0;
+   width: 100%;
   }
   .row {
     h1 a {      
@@ -11,7 +14,7 @@ header.mainhead {
       background: rgba(black, 0.7) url(../img/logo.png) no-repeat center center;
       text-indent: -9999px;
       display: block;
-      margin: 20px auto;
+      margin: 10px auto;
       @include bp(big){
         margin: 70px 0;
       }
@@ -23,13 +26,6 @@ header.mainhead {
     }
   }
   
-  .mc-slider {
-   position: relative;
-    top:-440px;
-    z-index: -1;
-    height: 440px;
-    display: block;
-  }
   
   .call-to-action {
       position: relative;
@@ -46,4 +42,23 @@ header.mainhead {
 
 .main-content {
   margin-top: 2*$padding;
+}
+
+/* Slider Images */
+
+.slider {
+  position:relative;
+  @media (max-width:1470px){
+    width:1470px;
+    left:50%;
+    margin-left:-735px;
+  }
+  img {
+  	position:absolute;
+    top:0;
+    max-width:100%;
+	opacity:0;
+    @include transition(2s);
+	&.active {opacity:1;}
+  }
 }

@@ -13,6 +13,13 @@
 
 <body <?php body_class(); ?>>
   <header class="mainhead" role="banner">
+	<div class="slider">
+		<?php $headerImages = get_field('header_images','options');
+			foreach($headerImages as $headerImage) { ?>
+			<img src="<?php echo $headerImage['image_file']; ?>"/>		
+		<?php } ?>
+    </div>
+
     <div class="container">
       <div class="row">
       	<div class="small-12 large-8 columns header-image" role="img">
