@@ -10,21 +10,17 @@
 		font-size: 1.3em;
 		border-right: 1px solid #eee;
 	}
+	
 	article {
 		display: inline;
 		float:left;
 		width:14.2857%;
 		height:45px;
-		}
-		
-		
-		
-	article {
 		
 		a {
 		  width:100%;
 		  height:45px;
-		  text-align:left;
+		  text-align:center;
 		  line-height:45px;
 		  display:block;
 		  font-size:1.3em;
@@ -37,16 +33,23 @@
 		  @include transition-timing-function(ease-in);
 		  padding-left: $padding;
 		  
-		  &.select {
+		  span { font-size: 1rem; color: red; }
+		  
+		  &.closed {
+			color: $mcgrey;
+		  }
+		  
+		  &.sold {
+			color: red;
+		  }
+		  
+		  
+		  &.select, &:hover {
 		    background:$primary-color;
 		    border-bottom: 1px solid $primary-color;
 		    color: white;
 		  }
 		 
-		  &:hover {
-		    background:$primary-color;
-		    color:white;
-		    }
 		}
 		
 		&.day a{
@@ -57,49 +60,45 @@
 			height: 50px;
 			line-height: 50px;
 		}
-		
-		&.closed a {
-			color: $mcgrey;
-		}
 	}	
 		
-		.today a{
-		  background:$primary-color;
-		}
+	.today a{
+		 background:$primary-color;
+	}
 		
-		.done {
+	.done {
 		  
-		  a {
+		a {
 		  background:#555;  
 		  color:$mcgrey;
 		  }
-		}
+	}
 		
-		article div {
-		  display:none;
-		}
+	article div {
+		display:none;
+	}
 		
-		.content.open {
-		  background: $primary-color;
-		  display:block;
-		  clear:both;
-		  padding:$padding;
-		  border-right: 1px solid #eee;
-		  border-left: 1px solid #eee;
-		  color:#fff;
-		  h4 {
-		    font-size: 1.3em;
-		    font-weight: 100;
-		    padding: 0 0 $padding;
-		    margin:0;
-		    color: #fff;
-		  }
-		  h6 {
-		  	  padding: 0;
-			  margin: 0.5*$padding 0;
-			  color: red;
-		  }
-		  
-		  
+	.content.open {
+	 	background: $primary-color;
+	 	display:block;
+	 	clear:both;
+	 	padding:$padding;
+	 	border-right: 1px solid #eee;
+	 	border-left: 1px solid #eee;
+	 	color:#fff;
+	  
+	 	h4 {
+	    	font-size: 1.3em;
+			font-weight: 100;
+			padding: 0 0 $padding;
+			margin:0;
+			color: #fff;
 		}
+	  
+		h6 {
+	  	  	padding: 0;
+	  	  	margin: 0.5*$padding 0;
+	  	  	color: red;
+	  	} 
+	}
 }

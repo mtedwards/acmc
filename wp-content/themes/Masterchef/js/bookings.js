@@ -8,11 +8,16 @@
     $(this).removeClass('select');
     $('.content').empty().removeClass('open');
   } else {
-    $('a').removeClass('select');
-    $('.content').empty().removeClass('open');
-    var content = $(this).parent().find('div').html();
-    var box = $(this).parent().nextAll('.content').first();
-    $(box).addClass('open').html(content);
-    $(this).addClass('select');
+  	if($(this).hasClass('closed')) {
+  		$('a').removeClass('select');
+  		$('.content').empty().removeClass('open');
+  	} else {
+    	$('a').removeClass('select');
+		$('.content').empty().removeClass('open');
+		var content = $(this).parent().find('div').html();
+		var box = $(this).parent().nextAll('.content').first();
+		$(box).addClass('open').html(content);
+		$(this).addClass('select');
+	}
   }
 });

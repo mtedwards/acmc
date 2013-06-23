@@ -16,28 +16,29 @@
 		<?php 
 			//define NOW
 			$now = date('Ymd') ."\n";
+			//$now = '20130820';
 			$dates = get_field('dates');
 			foreach($dates as $day){
 			// Dates
-				$disabled = 0;
 				$date = $day['date'];
 				$day_number = date("j", strtotime($date)) . "\n";
-				if($day_number == 1){$day_number = date("j M", strtotime($date)) . "\n"; }
+				if($day_number == 1){$day_number = date("j", strtotime($date)) . ' <span>' . date("M", strtotime($date)) . "</span>\n"; }
 				$day_of_week = date("w", strtotime($date)) . "\n";
-				if($day_of_week == 1){$disabled = 'closed';} 
 				$day_long = date("D j F", strtotime($date)) . "\n";
 		 ?>
-		 	<?php if($disabled === 'closed'){ ?>
-		 		<article class="closed single-day">
-		 			<a><?php echo $day_number; ?></a>
-		 		</article>
-		 	<?php } else { ?>
 				<article class="single-day">
-				    <a href="#"><?php echo $day_number; ?></a>
+					<?php if($day_of_week == 1 || $date < $now) { ?>
+		 				<a class="closed"><?php echo $day_number; ?></a>
+		 			<?php } elseif($day['sold_out']) { ?>
+		 				<a class="sold" href="#"><?php echo $day_number; ?></a>
+		 			<?php } else { ?>
+				    	<a href="#"><?php echo $day_number; ?></a>
+				    <?php } ?>
 				    <div class="day-details">
 					    <div class="row">
 					    	<div class="large-8 columns">
 					    		<h4><?php echo $day_long; ?></h4>
+					    		<?php echo $date; ?> - <?php echo $now; ?>
 					    		<?php if($day['description']) {
 					    				echo $day['description'];
 									} else {
@@ -64,7 +65,6 @@
 					    </div>
 				    </div>
 				 </article>
-			<?php } // end if ?>
 		<?php } //end for each ?>
 	
 	</div>
