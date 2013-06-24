@@ -27,8 +27,8 @@
       	</div>
       	<div class="small-12 large-4 columns">
       	 <div class="call-to-action">
-      		<a href="#" class="button white-trans">Book Sydney <span>Aug 12 - Sep 1</span></a>
-      		<a href="#" class="button white-trans">Book Melbourne <span>Sep 30 - Nov 3</span></a>
+      		<a href="<?php the_field('syd_link','options') ?>" class="button white-trans" target="_blank">Book Sydney <span><?php the_field('syd_dates','options') ?></span></a>
+      		<a href="<?php the_field('melb_link','options') ?>" class="button white-trans" target="_blank">Book Melbourne <span><?php the_field('syd_dates','options') ?></span></a>
       	 </div>
       	</div>
       </div>

@@ -1,6 +1,31 @@
 @charset "UTF-8";
+@import url("//hello.myfonts.net/count/2779d2");
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-/* line 3, ../scss/foundation/_variables.scss */
+/* @license
+ * MyFonts Webfont Build ID 2587090, 2013-06-23T21:27:22-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Eurostile LT Pro Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/eurostile/pro-roman/
+ * Copyright: Copyright &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Eurostile is a trademark of Linotype GmbH and
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2587090
+ * 
+ * © 2013 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'EurostileLTPro';
+  src: url("../fonts/2779D2_0_0.eot");
+  src: url("../fonts/2779D2_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2779D2_0_0.woff") format("woff"), url("../fonts/2779D2_0_0.ttf") format("truetype"); }
+
+/* line 29, ../scss/foundation/_variables.scss */
 *,
 *:before,
 *:after {
@@ -9,11 +34,11 @@
   box-sizing: border-box; }
 
 /* entypo */
-/* line 23, ../scss/foundation/_variables.scss */
+/* line 49, ../scss/foundation/_variables.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif; }
 
-/* line 63, ../scss/foundation/_variables.scss */
+/* line 89, ../scss/foundation/_variables.scss */
 .timeline-header, .timeline-footer {
   background: red; }
 
@@ -591,7 +616,7 @@ a {
 
 /* line 21, ../scss/foundation/_type.scss */
 p {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5em;
@@ -607,9 +632,9 @@ p {
     line-height: 1.35;
     font-style: italic; }
 
-/* line 40, ../scss/foundation/_type.scss */
+/* line 38, ../scss/foundation/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #222222;
@@ -619,27 +644,27 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2125em;
   text-transform: uppercase; }
 
-/* line 53, ../scss/foundation/_type.scss */
+/* line 51, ../scss/foundation/_type.scss */
 h1 {
   font-size: 2.125em; }
 
-/* line 57, ../scss/foundation/_type.scss */
+/* line 55, ../scss/foundation/_type.scss */
 h2 {
   font-size: 1.6875em; }
 
-/* line 61, ../scss/foundation/_type.scss */
+/* line 59, ../scss/foundation/_type.scss */
 h3 {
   font-size: 1.375em; }
 
-/* line 65, ../scss/foundation/_type.scss */
+/* line 63, ../scss/foundation/_type.scss */
 h4 {
   font-size: 1.125em; }
 
-/* line 69, ../scss/foundation/_type.scss */
+/* line 67, ../scss/foundation/_type.scss */
 h5 {
   font-size: 1.125em; }
 
-/* line 73, ../scss/foundation/_type.scss */
+/* line 71, ../scss/foundation/_type.scss */
 h6 {
   font-size: 1em; }
 
@@ -662,34 +687,34 @@ h6 {
     font-size: 1.4375em; } 
 }
 */
-/* line 99, ../scss/foundation/_type.scss */
+/* line 97, ../scss/foundation/_type.scss */
 hr {
-  border: solid #dddddd;
-  border-width: 1px 0 0;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #fff;
   clear: both;
-  margin: 1.25em 0 1.1875em;
+  margin: 1.25em 0;
   height: 0; }
 
 /* Helpful Typography Defaults */
-/* line 108, ../scss/foundation/_type.scss */
+/* line 106, ../scss/foundation/_type.scss */
 em,
 i {
   font-style: italic;
   line-height: inherit; }
 
-/* line 114, ../scss/foundation/_type.scss */
+/* line 112, ../scss/foundation/_type.scss */
 strong,
 b {
   font-weight: bold;
   line-height: inherit; }
 
-/* line 119, ../scss/foundation/_type.scss */
+/* line 117, ../scss/foundation/_type.scss */
 small {
   font-size: 60%;
   line-height: inherit; }
 
 /* Lists */
-/* line 129, ../scss/foundation/_type.scss */
+/* line 127, ../scss/foundation/_type.scss */
 ul,
 ol,
 dl {
@@ -699,57 +724,57 @@ dl {
   list-style-position: outside;
   font-family: "Square721", "Helvetica", Helvetica, Arial, sans-serif; }
 
-/* line 137, ../scss/foundation/_type.scss */
+/* line 135, ../scss/foundation/_type.scss */
 ul, ol {
   margin-left: 1.25em; }
 
 /* Unordered Lists */
-/* line 143, ../scss/foundation/_type.scss */
+/* line 141, ../scss/foundation/_type.scss */
 ul li ul,
 ul li ol {
   margin-left: 1.25em;
   margin-bottom: 0;
   font-size: 1em; }
 
-/* line 149, ../scss/foundation/_type.scss */
+/* line 147, ../scss/foundation/_type.scss */
 ul.square li ul, ul.circle li ul, ul.disc li ul {
   list-style: inherit; }
 
-/* line 152, ../scss/foundation/_type.scss */
+/* line 150, ../scss/foundation/_type.scss */
 ul.square {
   list-style-type: square; }
 
-/* line 155, ../scss/foundation/_type.scss */
+/* line 153, ../scss/foundation/_type.scss */
 ul.circle {
   list-style-type: circle; }
 
-/* line 158, ../scss/foundation/_type.scss */
+/* line 156, ../scss/foundation/_type.scss */
 ul.disc {
   list-style-type: disc; }
 
-/* line 161, ../scss/foundation/_type.scss */
+/* line 159, ../scss/foundation/_type.scss */
 ul.no-bullet {
   list-style: none; }
 
 /* Ordered Lists */
-/* line 167, ../scss/foundation/_type.scss */
+/* line 165, ../scss/foundation/_type.scss */
 ol li ul,
 ol li ol {
   margin-left: 1.25em;
   margin-bottom: 0; }
 
 /* Definition Lists */
-/* line 173, ../scss/foundation/_type.scss */
+/* line 171, ../scss/foundation/_type.scss */
 dl dt {
   margin-bottom: 0.3em;
   font-weight: bold; }
 
-/* line 177, ../scss/foundation/_type.scss */
+/* line 175, ../scss/foundation/_type.scss */
 dl dd {
   margin-bottom: 0.75em; }
 
 /* Abbreviations */
-/* line 183, ../scss/foundation/_type.scss */
+/* line 181, ../scss/foundation/_type.scss */
 abbr,
 acronym {
   text-transform: uppercase;
@@ -758,55 +783,55 @@ acronym {
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
 
-/* line 191, ../scss/foundation/_type.scss */
+/* line 189, ../scss/foundation/_type.scss */
 abbr {
   text-transform: none; }
 
 /* Blockquotes */
-/* line 196, ../scss/foundation/_type.scss */
+/* line 194, ../scss/foundation/_type.scss */
 blockquote {
   margin: 0 0 1.25em;
   padding: 0.5625em 1.25em 0 1.1875em;
   border-left: 1px solid #dddddd; }
-  /* line 201, ../scss/foundation/_type.scss */
+  /* line 199, ../scss/foundation/_type.scss */
   blockquote cite {
     display: block;
     font-size: 0.8125em;
     color: #555555; }
-    /* line 205, ../scss/foundation/_type.scss */
+    /* line 203, ../scss/foundation/_type.scss */
     blockquote cite:before {
       content: "\2014 \0020"; }
-    /* line 207, ../scss/foundation/_type.scss */
+    /* line 205, ../scss/foundation/_type.scss */
     blockquote cite a, blockquote cite a:visited {
       color: #555555; }
 
-/* line 214, ../scss/foundation/_type.scss */
+/* line 212, ../scss/foundation/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
   color: #6f6f6f; }
 
 /* Microformats */
-/* line 219, ../scss/foundation/_type.scss */
+/* line 217, ../scss/foundation/_type.scss */
 .vcard {
   display: inline-block;
   margin: 0 0 1.25em 0;
   border: 1px solid #dddddd;
   padding: 0.625em 0.75em; }
-  /* line 224, ../scss/foundation/_type.scss */
+  /* line 222, ../scss/foundation/_type.scss */
   .vcard li {
     margin: 0;
     display: block; }
-  /* line 227, ../scss/foundation/_type.scss */
+  /* line 225, ../scss/foundation/_type.scss */
   .vcard .fn {
     font-weight: bold;
     font-size: 0.9375em; }
 
-/* line 232, ../scss/foundation/_type.scss */
+/* line 230, ../scss/foundation/_type.scss */
 .vevent .summary {
   font-weight: bold; }
 
-/* line 235, ../scss/foundation/_type.scss */
+/* line 233, ../scss/foundation/_type.scss */
 .vevent abbr {
   cursor: default;
   text-decoration: none;
@@ -827,22 +852,23 @@ blockquote p {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background: white;
   color: #111111; }
-  /* line 12, ../scss/foundation/_buttons.scss */
+  /* line 13, ../scss/foundation/_buttons.scss */
   .button.white-trans {
     background: rgba(255, 255, 255, 0.7); }
-  /* line 16, ../scss/foundation/_buttons.scss */
+  /* line 17, ../scss/foundation/_buttons.scss */
   .button.white {
     background: #fff; }
-  /* line 20, ../scss/foundation/_buttons.scss */
+  /* line 21, ../scss/foundation/_buttons.scss */
   .button span {
     font-size: 0.7rem; }
     @media (max-width: 907px) and (min-width: 768px) {
-      /* line 20, ../scss/foundation/_buttons.scss */
+      /* line 21, ../scss/foundation/_buttons.scss */
       .button span {
         display: block; } }
-  /* line 27, ../scss/foundation/_buttons.scss */
+  /* line 28, ../scss/foundation/_buttons.scss */
   .button:after {
     font-family: 'entypo', sans-serif;
     content: '\E766';
@@ -854,14 +880,14 @@ blockquote p {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-  /* line 37, ../scss/foundation/_buttons.scss */
+  /* line 38, ../scss/foundation/_buttons.scss */
   .button:hover {
     background: rgba(255, 255, 255, 0.9); }
-    /* line 39, ../scss/foundation/_buttons.scss */
+    /* line 40, ../scss/foundation/_buttons.scss */
     .button:hover:after {
       right: 6px; }
 
-/* line 45, ../scss/foundation/_buttons.scss */
+/* line 46, ../scss/foundation/_buttons.scss */
 .contact-buttons .button {
   font-size: 16px;
   background: #111111;
@@ -869,10 +895,10 @@ blockquote p {
   font-size: 1em;
   padding: 1em 0px 1em 4em; }
   @media only screen and (min-width: 768px) {
-    /* line 45, ../scss/foundation/_buttons.scss */
+    /* line 46, ../scss/foundation/_buttons.scss */
     .contact-buttons .button {
       font-size: 13px; } }
-  /* line 52, ../scss/foundation/_buttons.scss */
+  /* line 53, ../scss/foundation/_buttons.scss */
   .contact-buttons .button:before {
     font-family: 'entypo', sans-serif;
     content: '\F30C';
@@ -881,22 +907,22 @@ blockquote p {
     top: 15px;
     font-size: 1.5em; }
   @media only screen and (min-width: 768px) {
-    /* line 61, ../scss/foundation/_buttons.scss */
+    /* line 62, ../scss/foundation/_buttons.scss */
     .contact-buttons .button:after, .contact-buttons .button:before {
       top: 12px; } }
-  /* line 67, ../scss/foundation/_buttons.scss */
+  /* line 68, ../scss/foundation/_buttons.scss */
   .contact-buttons .button.facebook:before {
     content: '\F30C'; }
-  /* line 71, ../scss/foundation/_buttons.scss */
+  /* line 72, ../scss/foundation/_buttons.scss */
   .contact-buttons .button.twitter:before {
     content: '\F309'; }
-  /* line 75, ../scss/foundation/_buttons.scss */
+  /* line 76, ../scss/foundation/_buttons.scss */
   .contact-buttons .button.web:before {
     content: '\27A6'; }
-  /* line 79, ../scss/foundation/_buttons.scss */
+  /* line 80, ../scss/foundation/_buttons.scss */
   .contact-buttons .button.dimmi:before {
     content: '\2302'; }
-  /* line 83, ../scss/foundation/_buttons.scss */
+  /* line 84, ../scss/foundation/_buttons.scss */
   .contact-buttons .button.other:before {
     content: '\E75B'; }
 
@@ -926,40 +952,40 @@ blockquote p {
   position: relative;
   background: #222222;
   margin-bottom: 1.875em; }
-  /* line 117, ../scss/foundation/_top-bar.scss */
+  /* line 118, ../scss/foundation/_top-bar.scss */
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
-  /* line 122, ../scss/foundation/_top-bar.scss */
+  /* line 123, ../scss/foundation/_top-bar.scss */
   .top-bar .row {
     max-width: none; }
-  /* line 125, ../scss/foundation/_top-bar.scss */
+  /* line 126, ../scss/foundation/_top-bar.scss */
   .top-bar .title-area {
     position: relative;
     margin: 0; }
-  /* line 130, ../scss/foundation/_top-bar.scss */
+  /* line 131, ../scss/foundation/_top-bar.scss */
   .top-bar .name {
     height: 60px;
     margin: 0;
     font-size: 16px; }
-    /* line 135, ../scss/foundation/_top-bar.scss */
+    /* line 136, ../scss/foundation/_top-bar.scss */
     .top-bar .name h1 {
       line-height: 60px;
       font-size: 1.0625em;
       margin: 0; }
-      /* line 139, ../scss/foundation/_top-bar.scss */
+      /* line 140, ../scss/foundation/_top-bar.scss */
       .top-bar .name h1 a {
         font-weight: 100;
         color: white;
         width: 50%;
         display: block;
         padding: 0 20px; }
-  /* line 150, ../scss/foundation/_top-bar.scss */
+  /* line 151, ../scss/foundation/_top-bar.scss */
   .top-bar .toggle-topbar {
     position: absolute;
     right: 0;
     top: 0; }
-    /* line 155, ../scss/foundation/_top-bar.scss */
+    /* line 156, ../scss/foundation/_top-bar.scss */
     .top-bar .toggle-topbar a {
       color: white;
       text-transform: uppercase;
@@ -970,13 +996,13 @@ blockquote p {
       padding: 0 20px;
       height: 60px;
       line-height: 60px; }
-    /* line 168, ../scss/foundation/_top-bar.scss */
+    /* line 169, ../scss/foundation/_top-bar.scss */
     .top-bar .toggle-topbar.menu-icon {
       right: 20px;
       top: 50%;
       margin-top: -16px;
       padding-left: 40px; }
-      /* line 174, ../scss/foundation/_top-bar.scss */
+      /* line 175, ../scss/foundation/_top-bar.scss */
       .top-bar .toggle-topbar.menu-icon a {
         text-indent: -48px;
         width: 34px;
@@ -984,7 +1010,7 @@ blockquote p {
         line-height: 33px;
         padding: 0;
         color: white; }
-        /* line 182, ../scss/foundation/_top-bar.scss */
+        /* line 183, ../scss/foundation/_top-bar.scss */
         .top-bar .toggle-topbar.menu-icon a span {
           position: absolute;
           right: 0;
@@ -993,22 +1019,22 @@ blockquote p {
           height: 0;
           -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
           box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
-  /* line 203, ../scss/foundation/_top-bar.scss */
+  /* line 204, ../scss/foundation/_top-bar.scss */
   .top-bar.expanded {
     height: auto;
     background: transparent; }
-    /* line 207, ../scss/foundation/_top-bar.scss */
+    /* line 208, ../scss/foundation/_top-bar.scss */
     .top-bar.expanded .title-area {
       background: #222222; }
-    /* line 210, ../scss/foundation/_top-bar.scss */
+    /* line 211, ../scss/foundation/_top-bar.scss */
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
-      /* line 211, ../scss/foundation/_top-bar.scss */
+      /* line 212, ../scss/foundation/_top-bar.scss */
       .top-bar.expanded .toggle-topbar a span {
         -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
         box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
 
-/* line 229, ../scss/foundation/_top-bar.scss */
+/* line 230, ../scss/foundation/_top-bar.scss */
 .top-bar-section {
   left: 0;
   position: relative;
@@ -1016,7 +1042,7 @@ blockquote p {
   -webkit-transition: left 300ms ease-out;
   -moz-transition: left 300ms ease-out;
   transition: left 300ms ease-out; }
-  /* line 235, ../scss/foundation/_top-bar.scss */
+  /* line 236, ../scss/foundation/_top-bar.scss */
   .top-bar-section ul {
     width: 100%;
     height: auto;
@@ -1024,7 +1050,7 @@ blockquote p {
     background: #222222;
     font-size: 16px;
     margin: 0; }
-  /* line 245, ../scss/foundation/_top-bar.scss */
+  /* line 246, ../scss/foundation/_top-bar.scss */
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
     border-bottom: solid 1px #3c3c3c;
@@ -1032,7 +1058,7 @@ blockquote p {
     clear: both;
     height: 1px;
     width: 100%; }
-  /* line 254, ../scss/foundation/_top-bar.scss */
+  /* line 255, ../scss/foundation/_top-bar.scss */
   .top-bar-section ul li > a {
     display: block;
     width: 100%;
@@ -1041,47 +1067,48 @@ blockquote p {
     padding-left: 20px;
     font-size: 0.8125em;
     font-weight: bold;
-    background: #222222; }
-    /* line 264, ../scss/foundation/_top-bar.scss */
+    background: #222222;
+    font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+    /* line 265, ../scss/foundation/_top-bar.scss */
     .top-bar-section ul li > a.hover {
       background: #1a1a1a;
       color: white; }
-    /* line 270, ../scss/foundation/_top-bar.scss */
+    /* line 271, ../scss/foundation/_top-bar.scss */
     .top-bar-section ul li > a.button {
       background: #111111;
       font-size: 0.8125em; }
-      /* line 273, ../scss/foundation/_top-bar.scss */
+      /* line 274, ../scss/foundation/_top-bar.scss */
       .top-bar-section ul li > a.button.hover {
         background: black; }
-    /* line 277, ../scss/foundation/_top-bar.scss */
+    /* line 278, ../scss/foundation/_top-bar.scss */
     .top-bar-section ul li > a.button.secondary {
       background: #878785; }
-      /* line 279, ../scss/foundation/_top-bar.scss */
+      /* line 280, ../scss/foundation/_top-bar.scss */
       .top-bar-section ul li > a.button.secondary.hover {
         background: #6d6d6c; }
-    /* line 283, ../scss/foundation/_top-bar.scss */
+    /* line 284, ../scss/foundation/_top-bar.scss */
     .top-bar-section ul li > a.button.success {
       background: #5da423; }
-      /* line 285, ../scss/foundation/_top-bar.scss */
+      /* line 286, ../scss/foundation/_top-bar.scss */
       .top-bar-section ul li > a.button.success.hover {
         background: #457a1a; }
-    /* line 289, ../scss/foundation/_top-bar.scss */
+    /* line 290, ../scss/foundation/_top-bar.scss */
     .top-bar-section ul li > a.button.alert {
       background: #c60f13; }
-      /* line 291, ../scss/foundation/_top-bar.scss */
+      /* line 292, ../scss/foundation/_top-bar.scss */
       .top-bar-section ul li > a.button.alert.hover {
         background: #970b0e; }
-  /* line 299, ../scss/foundation/_top-bar.scss */
+  /* line 300, ../scss/foundation/_top-bar.scss */
   .top-bar-section ul li.active > a {
     background: #1a1a1a;
     color: white; }
-  /* line 306, ../scss/foundation/_top-bar.scss */
+  /* line 307, ../scss/foundation/_top-bar.scss */
   .top-bar-section .has-form {
     padding: 20px; }
-  /* line 309, ../scss/foundation/_top-bar.scss */
+  /* line 310, ../scss/foundation/_top-bar.scss */
   .top-bar-section .has-dropdown {
     position: relative; }
-    /* line 313, ../scss/foundation/_top-bar.scss */
+    /* line 314, ../scss/foundation/_top-bar.scss */
     .top-bar-section .has-dropdown > a:after {
       content: "";
       display: block;
@@ -1095,36 +1122,36 @@ blockquote p {
       position: absolute;
       top: 50%;
       right: 0; }
-    /* line 323, ../scss/foundation/_top-bar.scss */
+    /* line 324, ../scss/foundation/_top-bar.scss */
     .top-bar-section .has-dropdown.moved {
       position: static; }
-      /* line 324, ../scss/foundation/_top-bar.scss */
+      /* line 325, ../scss/foundation/_top-bar.scss */
       .top-bar-section .has-dropdown.moved > .dropdown {
         visibility: visible; }
-  /* line 331, ../scss/foundation/_top-bar.scss */
+  /* line 332, ../scss/foundation/_top-bar.scss */
   .top-bar-section .dropdown {
     position: absolute;
     left: 100%;
     top: 0;
     visibility: hidden;
     z-index: 99; }
-    /* line 338, ../scss/foundation/_top-bar.scss */
+    /* line 339, ../scss/foundation/_top-bar.scss */
     .top-bar-section .dropdown li {
       width: 100%;
       height: auto; }
-      /* line 342, ../scss/foundation/_top-bar.scss */
+      /* line 343, ../scss/foundation/_top-bar.scss */
       .top-bar-section .dropdown li a {
         font-weight: normal;
         padding: 8px 20px; }
-      /* line 347, ../scss/foundation/_top-bar.scss */
+      /* line 348, ../scss/foundation/_top-bar.scss */
       .top-bar-section .dropdown li.title h5 {
         margin-bottom: 0; }
-        /* line 348, ../scss/foundation/_top-bar.scss */
+        /* line 349, ../scss/foundation/_top-bar.scss */
         .top-bar-section .dropdown li.title h5 a {
           color: white;
           line-height: 30px;
           display: block; }
-    /* line 356, ../scss/foundation/_top-bar.scss */
+    /* line 357, ../scss/foundation/_top-bar.scss */
     .top-bar-section .dropdown label {
       padding: 8px 20px 2px;
       margin-bottom: 0;
@@ -1133,17 +1160,17 @@ blockquote p {
       font-weight: bold;
       font-size: 0.625em; }
 
-/* line 368, ../scss/foundation/_top-bar.scss */
+/* line 369, ../scss/foundation/_top-bar.scss */
 .top-bar-js-breakpoint {
   width: 47.5em !important;
   visibility: hidden; }
 
-/* line 372, ../scss/foundation/_top-bar.scss */
+/* line 373, ../scss/foundation/_top-bar.scss */
 .js-generated {
   display: block; }
 
 @media only screen and (min-width: 47.5em) {
-  /* line 377, ../scss/foundation/_top-bar.scss */
+  /* line 378, ../scss/foundation/_top-bar.scss */
   .top-bar {
     background: #222222;
     *zoom: 1;
@@ -1155,39 +1182,39 @@ blockquote p {
     /* line 122, ../scss/foundation/_global.scss */
     .top-bar:after {
       clear: both; }
-    /* line 382, ../scss/foundation/_top-bar.scss */
+    /* line 383, ../scss/foundation/_top-bar.scss */
     .top-bar .toggle-topbar {
       display: none; }
-    /* line 384, ../scss/foundation/_top-bar.scss */
+    /* line 385, ../scss/foundation/_top-bar.scss */
     .top-bar .title-area {
       float: left; }
-    /* line 385, ../scss/foundation/_top-bar.scss */
+    /* line 386, ../scss/foundation/_top-bar.scss */
     .top-bar .name h1 a {
       width: auto; }
-    /* line 387, ../scss/foundation/_top-bar.scss */
+    /* line 388, ../scss/foundation/_top-bar.scss */
     .top-bar.expanded {
       background: #222222; }
 
-  /* line 390, ../scss/foundation/_top-bar.scss */
+  /* line 391, ../scss/foundation/_top-bar.scss */
   .contain-to-grid .top-bar {
     margin: 0 auto; }
 
-  /* line 394, ../scss/foundation/_top-bar.scss */
+  /* line 395, ../scss/foundation/_top-bar.scss */
   .top-bar-section {
     text-align: center; }
-    /* line 397, ../scss/foundation/_top-bar.scss */
+    /* line 398, ../scss/foundation/_top-bar.scss */
     .top-bar-section ul {
       width: 100%;
       font-size: 1em;
       height: auto !important;
       display: block;
       text-align: center; }
-      /* line 405, ../scss/foundation/_top-bar.scss */
+      /* line 406, ../scss/foundation/_top-bar.scss */
       .top-bar-section ul li {
         float: left;
         width: 16.66%;
         position: relative; }
-        /* line 410, ../scss/foundation/_top-bar.scss */
+        /* line 411, ../scss/foundation/_top-bar.scss */
         .top-bar-section ul li.active a {
           background: inherit;
           color: white; }
@@ -1206,14 +1233,14 @@ blockquote p {
           bottom: 0;
           left: 50%;
           margin-left: -10px; }
-    /* line 420, ../scss/foundation/_top-bar.scss */
+    /* line 421, ../scss/foundation/_top-bar.scss */
     .top-bar-section li a:not(.button) {
       padding: 0 20px;
       line-height: 60px;
       font-weight: 100;
       text-transform: uppercase;
       color: #878785; }
-      /* line 426, ../scss/foundation/_top-bar.scss */
+      /* line 427, ../scss/foundation/_top-bar.scss */
       .top-bar-section li a:not(.button):hover {
         color: #fff; }
         /* line 69, ../scss/foundation/_top-bar.scss */
@@ -1231,14 +1258,14 @@ blockquote p {
           bottom: 0;
           left: 50%;
           margin-left: -10px; }
-    /* line 436, ../scss/foundation/_top-bar.scss */
+    /* line 437, ../scss/foundation/_top-bar.scss */
     .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
       border: none;
       clear: none;
       height: 60px;
       width: 0px; } }
     @media only screen and (min-width: 47.5em) and (min-width: 885px) {
-      /* line 397, ../scss/foundation/_top-bar.scss */
+      /* line 398, ../scss/foundation/_top-bar.scss */
       .top-bar-section ul {
         font-size: 1.25em; } }
 /* line 1, ../scss/_custom-setup.scss */
@@ -1424,44 +1451,48 @@ header.mainhead {
   margin: 0; }
 /* line 39, ../scss/_talent.scss */
 .boxes article .small-details {
-  padding: 10px;
+  padding: 14px 10px;
   position: relative; }
   /* line 41, ../scss/_talent.scss */
-  .boxes article .small-details p {
-    margin: 0;
-    padding: 0; }
-  /* line 42, ../scss/_talent.scss */
   .boxes article .small-details b {
-    color: #111111; }
-  /* line 44, ../scss/_talent.scss */
+    margin: 0;
+    padding: 0;
+    color: #111111;
+    font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  /* line 47, ../scss/_talent.scss */
   .boxes article .small-details:after {
     font-family: 'entypo', sans-serif;
     content: '\E766';
     color: #111111;
     position: absolute;
     right: 12px;
-    top: 15px;
+    top: 10px;
     font-size: 1.5em;
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-/* line 56, ../scss/_talent.scss */
+/* line 59, ../scss/_talent.scss */
 .boxes article a:hover .small-details:after {
   right: 6px; }
-/* line 60, ../scss/_talent.scss */
+/* line 63, ../scss/_talent.scss */
 .boxes article.current {
   margin-bottom: 0;
   border-bottom: 20px solid white; }
-  /* line 63, ../scss/_talent.scss */
+  /* line 66, ../scss/_talent.scss */
   .boxes article.current .small-details:after {
     font-family: 'entypo', sans-serif;
     content: '\2716';
-    right: 12px; }
-/* line 70, ../scss/_talent.scss */
+    right: 12px;
+    color: #878785; }
+/* line 74, ../scss/_talent.scss */
+.boxes article.current a:hover .small-details:after {
+  right: 12px;
+  color: #111111; }
+/* line 79, ../scss/_talent.scss */
 .boxes article div.details {
   display: none; }
-/* line 74, ../scss/_talent.scss */
+/* line 83, ../scss/_talent.scss */
 .boxes .content {
   clear: both;
   background: #fff;
@@ -1475,28 +1506,29 @@ header.mainhead {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
-/* line 86, ../scss/_talent.scss */
+/* line 95, ../scss/_talent.scss */
 .boxes .content.open {
   max-height: 1000px;
   padding: 20px;
   opacity: 1; }
   @media only screen and (min-width: 400px) {
-    /* line 86, ../scss/_talent.scss */
+    /* line 95, ../scss/_talent.scss */
     .boxes .content.open {
       margin: 0 2% 10px 0; } }
   @media only screen and (min-width: 768px) {
-    /* line 86, ../scss/_talent.scss */
+    /* line 95, ../scss/_talent.scss */
     .boxes .content.open {
       margin: 0 3% 10px 0; } }
 
-/* line 100, ../scss/_talent.scss */
+/* line 109, ../scss/_talent.scss */
 .filters {
   margin: 20px 0; }
-  /* line 102, ../scss/_talent.scss */
+  /* line 111, ../scss/_talent.scss */
   .filters a {
     padding-right: 20px;
-    color: #878785; }
-    /* line 105, ../scss/_talent.scss */
+    color: #878785;
+    font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+    /* line 115, ../scss/_talent.scss */
     .filters a:hover, .filters a.active-filter {
       color: #111111; }
 
@@ -1596,3 +1628,59 @@ header.mainhead {
     padding: 0;
     margin: 10px 0;
     color: red; }
+
+/* line 2, ../scss/_boxed.scss */
+.boxed article {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 20px; }
+  @media only screen and (min-width: 450px) {
+    /* line 2, ../scss/_boxed.scss */
+    .boxed article {
+      width: 31%;
+      margin-right: 2%; } }
+/* line 17, ../scss/_boxed.scss */
+.boxed article a {
+  display: block;
+  padding: 0;
+  background: #fff;
+  text-decoration: none; }
+/* line 24, ../scss/_boxed.scss */
+.boxed article img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0; }
+/* line 33, ../scss/_boxed.scss */
+.boxed article .small-details {
+  padding: 14px 10px;
+  position: relative; }
+  /* line 35, ../scss/_boxed.scss */
+  .boxed article .small-details b {
+    margin: 0;
+    padding: 0;
+    color: #111111;
+    font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  /* line 43, ../scss/_boxed.scss */
+  .boxed article .small-details:after {
+    font-family: 'entypo', sans-serif;
+    content: '\E766';
+    color: #111111;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-size: 1.5em;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+/* line 56, ../scss/_boxed.scss */
+.boxed article a:hover .small-details:after {
+  right: 6px; }

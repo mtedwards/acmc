@@ -1,3 +1,7 @@
+<?php /*
+  Template Name: Talent Archve
+*/ ?>
+
 <?php get_header(); ?>
 
 <!-- Row for main content area -->

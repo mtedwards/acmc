@@ -113,6 +113,7 @@ $topbar-sticky-class:                  ".sticky" !default;
     background: $topbar-bg;
     margin-bottom: $topbar-margin-bottom;
 
+
     // Topbar Global list Styles
     ul {
       margin-bottom: 0;
@@ -178,7 +179,7 @@ $topbar-sticky-class:                  ".sticky" !default;
           line-height: 33px;
           padding: 0;
           color: $topbar-menu-link-color;
-
+          
           span {
             position: absolute;
             #{$opposite-direction}: 0;
@@ -260,7 +261,7 @@ $topbar-sticky-class:                  ".sticky" !default;
         font-size: $topbar-link-font-size;
         font-weight: $topbar-link-weight;
         background: $topbar-dropdown-bg;
-
+        font-family: $heading-text;
         &.hover {
           background: $topbar-link-bg-hover;
           color: $topbar-link-color-hover;

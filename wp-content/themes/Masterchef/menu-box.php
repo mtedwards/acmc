@@ -26,11 +26,20 @@
 		<div class="row">
 		  <div class="large-6 columns">
 				<h4><?php echo $name; ?></h4>
-				<?php the_excerpt(); ?>
-				<p><a href="<?php the_permalink(); ?>">Read More</a></p>
+				<?php 
+  				$options = get_field('options');
+  				foreach($options as $option){
+    			 $visable = $option['sydney_option'];
+    			 if('$visable'){
+      			 echo $option['content_option'];
+    			 }	
+  				}
+				?>
 		  </div>
-		  <div class="large-6 columns">
-				<?php get_template_part('includes/contact-buttons'); ?>
+		  <div class="large-6 columns right">
+		    <div class="contact-buttons">
+				 <a href="<?php the_field('weblink'); ?>" target="_blank" class="button web">Book now</a>
+		    </div>
 		  </div>
 		</div>
   </div><?php // end popup section ?>

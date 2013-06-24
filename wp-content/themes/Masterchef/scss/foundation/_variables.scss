@@ -1,3 +1,29 @@
+/* @license
+ * MyFonts Webfont Build ID 2587090, 2013-06-23T21:27:22-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Eurostile LT Pro Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/eurostile/pro-roman/
+ * Copyright: Copyright &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Eurostile is a trademark of Linotype GmbH and
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2587090
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2779d2");
+
+  
+@font-face {font-family: 'EurostileLTPro';src: url('../fonts/2779D2_0_0.eot');src: url('../fonts/2779D2_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2779D2_0_0.woff') format('woff'),url('../fonts/2779D2_0_0.ttf') format('truetype');}
+
 *,
 *:before,
 *:after {
@@ -24,11 +50,11 @@
   font-family: 'entypo', sans-serif;
 }
 
-//fonts
+//fonts "EurostileLTPro",
 
-$heading-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$heading-text:  "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  
-$body-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$body-text: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 
 

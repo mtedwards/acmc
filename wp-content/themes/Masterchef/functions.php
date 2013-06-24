@@ -66,7 +66,7 @@ add_filter( 'wp_trim_excerpt', 'new_excerpt_more' );
 
 
 // Register Talent post type
-register_post_type('talent', array(	'label' => 'Talent','description' => '','public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post','hierarchical' => false,'rewrite' => array('slug' => ''),'query_var' => true,'has_archive' => true,'exclude_from_search' => false,'supports' => array('title','editor','excerpt','revisions','thumbnail',),'labels' => array (
+register_post_type('talent', array(	'label' => 'Talent','description' => '','public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post','hierarchical' => false,'rewrite' => array('slug' => ''),'query_var' => true,'has_archive' => true,'exclude_from_search' => false,'supports' => array('title','editor','excerpt','revisions','thumbnail',),'taxonomies' => array('city',),'labels' => array (
   'name' => 'Talent',
   'singular_name' => 'Talent',
   'menu_name' => 'Talent',
@@ -86,26 +86,26 @@ register_post_type('talent', array(	'label' => 'Talent','description' => '','pub
 // Register Custom Post Type
 function custom_post_type() {
 	$labels = array(
-		'name'                => _x( 'Booking Cities', 'Post Type General Name', 'text_domain' ),
-		'singular_name'       => _x( 'Booking City', 'Post Type Singular Name', 'text_domain' ),
+		'name'                => _x( 'Booking Weeks', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Booking Week', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'           => __( 'Bookings', 'text_domain' ),
-		'parent_item_colon'   => __( 'Parent City:', 'text_domain' ),
-		'all_items'           => __( 'All Cities', 'text_domain' ),
-		'view_item'           => __( 'View City', 'text_domain' ),
-		'add_new_item'        => __( 'Add New City', 'text_domain' ),
-		'add_new'             => __( 'New City', 'text_domain' ),
-		'edit_item'           => __( 'Edit City', 'text_domain' ),
-		'update_item'         => __( 'Update City', 'text_domain' ),
-		'search_items'        => __( 'Search cities', 'text_domain' ),
-		'not_found'           => __( 'No cities found', 'text_domain' ),
-		'not_found_in_trash'  => __( 'No cities found in Trash', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Week:', 'text_domain' ),
+		'all_items'           => __( 'All Weeks', 'text_domain' ),
+		'view_item'           => __( 'View Week', 'text_domain' ),
+		'add_new_item'        => __( 'Add New Week', 'text_domain' ),
+		'add_new'             => __( 'New Week', 'text_domain' ),
+		'edit_item'           => __( 'Edit Week', 'text_domain' ),
+		'update_item'         => __( 'Update Week', 'text_domain' ),
+		'search_items'        => __( 'Search weeks', 'text_domain' ),
+		'not_found'           => __( 'No weeks found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'No weeks found in Trash', 'text_domain' ),
 	);
 
 	$args = array(
 		'label'               => __( 'bookings', 'text_domain' ),
-		'description'         => __( 'Booking Cities', 'text_domain' ),
+		'description'         => __( 'Booking Weeks', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', ),
+		'supports'            => array('title','revisions',),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
@@ -113,7 +113,6 @@ function custom_post_type() {
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 5,
-		'menu_icon'           => '',
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
@@ -124,5 +123,28 @@ function custom_post_type() {
 	register_post_type( 'bookings', $args );
 }
 
+register_taxonomy('city',array (
+  0 => 'bookings',
+),array( 'hierarchical' => false,'label' => 'Cities','show_ui' => true,'query_var' => true,'rewrite' => array('slug' => ''),'singular_label' => 'City') );
+
+
+
 // Hook into the 'init' action
 add_action( 'init', 'custom_post_type', 0 );
+
+register_post_type('menus', array(	'label' => 'Menus','description' => '','public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post','hierarchical' => false,'rewrite' => array('slug' => ''),'query_var' => true,'has_archive' => true,'exclude_from_search' => false,'supports' => array('title','revisions','thumbnail',),'labels' => array (
+  'name' => 'Menus',
+  'singular_name' => 'Menu',
+  'menu_name' => 'Menus',
+  'add_new' => 'Add Menu',
+  'add_new_item' => 'Add New Menu',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Menu',
+  'new_item' => 'New Menu',
+  'view' => 'View Menu',
+  'view_item' => 'View Menu',
+  'search_items' => 'Search Menus',
+  'not_found' => 'No Menus Found',
+  'not_found_in_trash' => 'No Menus Found in Trash',
+  'parent' => 'Parent Menu',
+),) );

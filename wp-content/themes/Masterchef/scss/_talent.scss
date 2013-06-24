@@ -37,9 +37,12 @@
   }
   
   article .small-details {
-    padding: 0.5*$padding;
-    p {margin: 0; padding:0;}
-    b {color: $primary-color; }
+    padding: 0.7*$padding 0.5*$padding;
+    b {
+      margin: 0; padding:0;
+      color: $primary-color; 
+      font-family: $heading-text;
+    }
     position:relative;
     &:after {
       font-family: 'entypo', sans-serif;
@@ -47,7 +50,7 @@
       color: $primary-color;
       position: absolute;
       right: 12px;
-      top: 15px;
+      top: 0.5*$padding;
       font-size: 1.5em;
       @include transition-duration(0.3s);
     } 
@@ -64,7 +67,13 @@
       font-family: 'entypo', sans-serif;
       content: '\2716';
       right:12px;
+      color: $mcgrey;
     }
+  }
+  
+  article.current a:hover .small-details:after {
+    right: 12px;
+    color: $primary-color;
   }
   
   article div.details { 
@@ -102,6 +111,7 @@
   a {
     padding-right:$padding;
     color: $mcgrey;
+    font-family: $heading-text;
     &:hover, &.active-filter {
       color: $primary-color;
       }
