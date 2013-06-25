@@ -34,11 +34,11 @@
   box-sizing: border-box; }
 
 /* entypo */
-/* line 49, ../scss/foundation/_variables.scss */
+/* line 54, ../scss/foundation/_variables.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif; }
 
-/* line 89, ../scss/foundation/_variables.scss */
+/* line 94, ../scss/foundation/_variables.scss */
 .timeline-header, .timeline-footer {
   background: red; }
 
@@ -325,62 +325,62 @@ select {
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 768px) {
   /* line 140, ../scss/foundation/_grid.scss */
-  .large-1 {
+  .columns.large-1 {
     position: relative;
     width: 8.33333%; }
 
   /* line 144, ../scss/foundation/_grid.scss */
-  .large-2 {
+  .columns.large-2 {
     position: relative;
     width: 16.66667%; }
 
   /* line 148, ../scss/foundation/_grid.scss */
-  .large-3 {
+  .columns.large-3 {
     position: relative;
     width: 25%; }
 
   /* line 152, ../scss/foundation/_grid.scss */
-  .large-4 {
+  .columns.large-4 {
     position: relative;
     width: 33.33333%; }
 
   /* line 156, ../scss/foundation/_grid.scss */
-  .large-5 {
+  .columns.large-5 {
     position: relative;
     width: 41.66667%; }
 
   /* line 160, ../scss/foundation/_grid.scss */
-  .large-6 {
+  .columns.large-6 {
     position: relative;
     width: 50%; }
 
   /* line 164, ../scss/foundation/_grid.scss */
-  .large-7 {
+  .columns.large-7 {
     position: relative;
     width: 58.33333%; }
 
   /* line 168, ../scss/foundation/_grid.scss */
-  .large-8 {
+  .columns.large-8 {
     position: relative;
     width: 66.66667%; }
 
   /* line 172, ../scss/foundation/_grid.scss */
-  .large-9 {
+  .columns.large-9 {
     position: relative;
     width: 75%; }
 
   /* line 176, ../scss/foundation/_grid.scss */
-  .large-10 {
+  .columns.large-10 {
     position: relative;
     width: 83.33333%; }
 
   /* line 180, ../scss/foundation/_grid.scss */
-  .large-11 {
+  .columns.large-11 {
     position: relative;
     width: 91.66667%; }
 
   /* line 184, ../scss/foundation/_grid.scss */
-  .large-12 {
+  .columns.large-12 {
     position: relative;
     width: 100%; }
 
@@ -622,7 +622,7 @@ p {
   line-height: 1.5em;
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 920px) {
     /* line 21, ../scss/foundation/_type.scss */
     p {
       font-size: 13px; } }
@@ -894,7 +894,7 @@ blockquote p {
   color: #fff;
   font-size: 1em;
   padding: 1em 0px 1em 4em; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 920px) {
     /* line 46, ../scss/foundation/_buttons.scss */
     .contact-buttons .button {
       font-size: 13px; } }
@@ -906,7 +906,7 @@ blockquote p {
     left: 12px;
     top: 15px;
     font-size: 1.5em; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 920px) {
     /* line 62, ../scss/foundation/_buttons.scss */
     .contact-buttons .button:after, .contact-buttons .button:before {
       top: 12px; } }
@@ -1351,7 +1351,7 @@ header.mainhead {
     position: absolute;
     top: 0;
     width: 100%; }
-  /* line 11, ../scss/_header.scss */
+  /* line 12, ../scss/_header.scss */
   header.mainhead .row h1 a {
     width: 300px;
     height: 300px;
@@ -1368,40 +1368,40 @@ header.mainhead {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s; }
-    @media only screen and (min-width: 768px) {
-      /* line 11, ../scss/_header.scss */
+    @media only screen and (min-width: 920px) {
+      /* line 12, ../scss/_header.scss */
       header.mainhead .row h1 a {
         margin: 70px 0; } }
-    /* line 23, ../scss/_header.scss */
+    /* line 24, ../scss/_header.scss */
     header.mainhead .row h1 a:hover {
       background: rgba(0, 0, 0, 0.8) url(../img/logo.png) no-repeat center center; }
-  /* line 30, ../scss/_header.scss */
+  /* line 31, ../scss/_header.scss */
   header.mainhead .call-to-action {
     position: relative; }
-    @media only screen and (min-width: 768px) {
-      /* line 30, ../scss/_header.scss */
+    @media only screen and (min-width: 920px) {
+      /* line 31, ../scss/_header.scss */
       header.mainhead .call-to-action {
         top: 264px; } }
     @media (max-width: 907px) and (min-width: 768px) {
-      /* line 36, ../scss/_header.scss */
+      /* line 37, ../scss/_header.scss */
       header.mainhead .call-to-action .button {
         padding: 5px 10px; } }
 
-/* line 43, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 .main-content {
   margin-top: 40px; }
 
 /* Slider Images */
-/* line 49, ../scss/_header.scss */
+/* line 50, ../scss/_header.scss */
 .slider {
   position: relative; }
   @media (max-width: 1470px) {
-    /* line 49, ../scss/_header.scss */
+    /* line 50, ../scss/_header.scss */
     .slider {
       width: 1470px;
       left: 50%;
       margin-left: -735px; } }
-  /* line 56, ../scss/_header.scss */
+  /* line 57, ../scss/_header.scss */
   .slider img {
     position: absolute;
     top: 0;
@@ -1411,9 +1411,13 @@ header.mainhead {
     -moz-transition: 2s;
     -o-transition: 2s;
     transition: 2s; }
-    /* line 62, ../scss/_header.scss */
+    /* line 63, ../scss/_header.scss */
     .slider img.active {
       opacity: 1; }
+
+/* line 1, ../scss/_footer.scss */
+footer.full-width {
+  background: #333; }
 
 /* line 2, ../scss/_talent.scss */
 .boxes article {
@@ -1430,7 +1434,7 @@ header.mainhead {
     .boxes article {
       width: 48%;
       margin-right: 2%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 920px) {
     /* line 2, ../scss/_talent.scss */
     .boxes article {
       width: 31%;
@@ -1506,57 +1510,53 @@ header.mainhead {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
-/* line 95, ../scss/_talent.scss */
+  /* line 93, ../scss/_talent.scss */
+  .boxes .content img, .boxes .content h4 {
+    display: none; }
+    @media only screen and (min-width: 400px) {
+      /* line 93, ../scss/_talent.scss */
+      .boxes .content img, .boxes .content h4 {
+        display: block; } }
+/* line 101, ../scss/_talent.scss */
 .boxes .content.open {
   max-height: 1000px;
   padding: 20px;
   opacity: 1; }
   @media only screen and (min-width: 400px) {
-    /* line 95, ../scss/_talent.scss */
+    /* line 101, ../scss/_talent.scss */
     .boxes .content.open {
       margin: 0 2% 10px 0; } }
-  @media only screen and (min-width: 768px) {
-    /* line 95, ../scss/_talent.scss */
+  @media only screen and (min-width: 920px) {
+    /* line 101, ../scss/_talent.scss */
     .boxes .content.open {
       margin: 0 3% 10px 0; } }
 
-/* line 109, ../scss/_talent.scss */
+/* line 115, ../scss/_talent.scss */
 .filters {
   margin: 20px 0; }
-  /* line 111, ../scss/_talent.scss */
+  /* line 117, ../scss/_talent.scss */
   .filters a {
     padding-right: 20px;
     color: #878785;
     font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
-    /* line 115, ../scss/_talent.scss */
+    /* line 121, ../scss/_talent.scss */
     .filters a:hover, .filters a.active-filter {
       color: #111111; }
 
-/* line 2, ../scss/_bookings.scss */
-.bookings h3 {
-  width: 100%;
-  text-align: center;
-  color: white;
-  background: #111111;
-  margin: 0;
-  height: 45px;
-  line-height: 45px;
-  font-size: 1.3em;
-  border-right: 1px solid #eee; }
-/* line 14, ../scss/_bookings.scss */
+/* line 3, ../scss/_bookings.scss */
 .bookings article {
   display: inline;
   float: left;
   width: 14.2857%;
   height: 45px; }
-  /* line 20, ../scss/_bookings.scss */
+  /* line 9, ../scss/_bookings.scss */
   .bookings article a {
+    padding-top: 5px;
     width: 100%;
     height: 45px;
     text-align: center;
-    line-height: 45px;
     display: block;
-    font-size: 1.3em;
+    font-size: 1.35em;
     color: #111111;
     border: 1px solid #eee;
     background: #fff;
@@ -1572,42 +1572,56 @@ header.mainhead {
     -webkit-transition-timing-function: ease-in;
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-    padding-left: 20px; }
-    /* line 36, ../scss/_bookings.scss */
+    transition-timing-function: ease-in; }
+    /* line 24, ../scss/_bookings.scss */
     .bookings article a span {
-      font-size: 1rem;
-      color: red; }
-    /* line 38, ../scss/_bookings.scss */
+      font-size: 0.8rem;
+      display: block;
+      margin: 0;
+      padding: 0;
+      line-height: 0.8rem;
+      text-transform: uppercase; }
+    /* line 26, ../scss/_bookings.scss */
     .bookings article a.closed {
       color: #878785; }
-    /* line 42, ../scss/_bookings.scss */
+    /* line 30, ../scss/_bookings.scss */
     .bookings article a.sold {
-      color: red; }
-    /* line 47, ../scss/_bookings.scss */
+      color: #f27d00; }
+    /* line 35, ../scss/_bookings.scss */
     .bookings article a.select, .bookings article a:hover {
       background: #111111;
       border-bottom: 1px solid #111111;
       color: white; }
-  /* line 55, ../scss/_bookings.scss */
+  /* line 43, ../scss/_bookings.scss */
   .bookings article.day a {
     text-align: center;
     border: none;
     background: #111111;
     color: #fff;
-    height: 50px;
-    line-height: 50px; }
-/* line 65, ../scss/_bookings.scss */
+    height: 45px;
+    line-height: 45px; }
+/* line 53, ../scss/_bookings.scss */
 .bookings .today a {
   background: #111111; }
-/* line 71, ../scss/_bookings.scss */
+/* line 59, ../scss/_bookings.scss */
 .bookings .done a {
   background: #555;
   color: #878785; }
-/* line 77, ../scss/_bookings.scss */
+/* line 65, ../scss/_bookings.scss */
 .bookings article div {
   display: none; }
-/* line 81, ../scss/_bookings.scss */
+/* line 69, ../scss/_bookings.scss */
+.bookings .content a.image-box {
+  width: 33%;
+  display: block;
+  float: left;
+  color: white;
+  font-weight: bold; }
+  /* line 76, ../scss/_bookings.scss */
+  .bookings .content a.image-box img {
+    margin: 20px 0 10px 0;
+    padding: 0; }
+/* line 83, ../scss/_bookings.scss */
 .bookings .content.open {
   background: #111111;
   display: block;
@@ -1616,18 +1630,18 @@ header.mainhead {
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
   color: #fff; }
-  /* line 90, ../scss/_bookings.scss */
+  /* line 92, ../scss/_bookings.scss */
   .bookings .content.open h4 {
     font-size: 1.3em;
     font-weight: 100;
     padding: 0 0 20px;
     margin: 0;
     color: #fff; }
-  /* line 98, ../scss/_bookings.scss */
+  /* line 100, ../scss/_bookings.scss */
   .bookings .content.open h6 {
     padding: 0;
     margin: 10px 0;
-    color: red; }
+    color: #f27d00; }
 
 /* line 2, ../scss/_boxed.scss */
 .boxed article {

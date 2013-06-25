@@ -24,12 +24,12 @@
   <div class="details">
     <?php echo $img; ?>
 		<div class="row">
-		  <div class="large-6 columns">
+		  <div class="small-12 large-6 columns">
 				<h4><?php echo $name; ?></h4>
 				<?php the_excerpt(); ?>
 				<p><a href="<?php the_permalink(); ?>">Read More</a></p>
 		  </div>
-		  <div class="large-6 columns">
+		  <div class="small-12 large-6 columns">
 				<?php get_template_part('includes/contact-buttons'); ?>
 		  </div>
 		</div>
