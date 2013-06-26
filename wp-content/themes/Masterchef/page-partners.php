@@ -5,7 +5,7 @@
 				<div class="entry-content">
 					<?php $prem_partners = get_field('prem_partners'); 
   					if($prem_partners){ ?>
-    					<div class="tier_1">
+    					<div class="tier_1 boxes">
     					<?php foreach($prem_partners as $prem){ ?>
       					<article>
                 <?php // Initial displayed section ?>
@@ -29,13 +29,14 @@
               </article>
     				<?php	
     				  } //foreach ?>
+    				  <div class="content"></div>
     					</div>
   				<?php	} // end if 
 					?>
 					<hr>
 					<?php $mid_partners = get_field('mid_partners'); 
   				  if($mid_partners){ ?>
-  				  <div class="tier_2">
+  				  <div class="tier_2 boxes">
     				<?php foreach($mid_partners as $mid){ ?>
       					<article>
                 <?php // Initial displayed section ?>
@@ -60,6 +61,7 @@
 
     				<?php	
     				  } //foreach ?>
+    				  <div class="content"></div>
   				  </div>
   				<?php	
   				  } // end if 
@@ -69,7 +71,7 @@
 					 if($low_partners){ ?>
 					   <div class="tier_3">
     					<?php foreach($low_partners as $low){ ?>
-      					<?php the_title(); ?>
+      					<a href="<?php echo $low['link']; ?>"><img src="<?php echo $low['image']; ?>"/></a>
     				<?php	
     				  } //foreach ?>
 					   </div>
