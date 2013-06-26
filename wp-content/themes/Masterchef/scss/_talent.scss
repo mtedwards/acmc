@@ -45,8 +45,8 @@
     }
     position:relative;
     &:after {
-      font-family: 'entypo', sans-serif;
-      content:'\E766';
+      font-family: 'mcdicon', sans-serif;
+      content:'\!';
       color: $primary-color;
       position: absolute;
       right: 12px;
@@ -64,8 +64,8 @@
     margin-bottom: 0;
     border-bottom: $padding solid #fff;
     .small-details:after {
-      font-family: 'entypo', sans-serif;
-      content: '\2716';
+      font-family: 'mcdicon', sans-serif;
+      content: '\#';
       right:12px;
       color: $mcgrey;
     }

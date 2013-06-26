@@ -103,4 +103,16 @@
 	  	  	color: $mcorange;
 	  	} 
 	}
+	
+	.guide {
+  	margin-top: $padding;
+	}
+	
+	b.date-guide {
+  	display: inline-block;
+  	height: 20px;
+  	width: 20px;
+  	margin-right: 20px;
+  	background: $mcorange;
+	}
 }

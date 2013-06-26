@@ -650,7 +650,13 @@ get_header(); ?>
 			wp_reset_postdata();
 			
 			?>
-	
+			<div class="row">
+				<div class="small-12 columns guide">
+					<h5>Date Guide</h5>
+					<p><b class="date-guide"></b>Dates marked in orange are sold out.</p>
+				</div> 
+			</div>
+			
 	</div>
 	<?php get_sidebar(); ?>
 		

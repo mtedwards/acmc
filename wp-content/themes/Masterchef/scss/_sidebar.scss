@@ -47,7 +47,7 @@
       margin-right: 5px;
       &:hover { color: $mcgrey;}
       &:before {
-        font-family: 'entypo', sans-serif;
+        font-family: 'mcdicon', sans-serif;
         color: $primary-color;;
         position: absolute;
         font-size: 1.5em;
@@ -55,20 +55,20 @@
        } 
         // Different Icons
         &.addthis_button_facebook:before {
-            content:'\F30C';
+            content:'\&';
             left:10px;
           }
-        &.addthis_button_twittert:before {
-            content:'\F309';
+        &.addthis_button_twitter:before {
+            content:'\%';
           }
         &.addthis_button_email:before {
-            content:'\2709';
+            content:'\"';
           }
         &.addthis_button_pinterest_share:before {
-            content:'\F312';
+            content:'\'';
           }
         &.addthis_button_compact:before {
-            content:'\2795';
+            content:'\(';
           }
         
     }

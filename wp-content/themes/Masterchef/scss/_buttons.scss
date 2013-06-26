@@ -26,8 +26,8 @@
   }
   
   &:after {
-    font-family: 'entypo', sans-serif;
-    content:'\E766';
+    font-family: 'mcdicon', sans-serif;
+    content:'\!';
     position: absolute;
     right: 12px;
     top: 15px;
@@ -78,8 +78,8 @@
   padding: 1em 0px 1em 4em;
   
   &:before {
-    font-family: 'entypo', sans-serif;
-    content:'\F30C';
+    font-family: 'mcdicon', sans-serif;
+    content:'\&';
     position: absolute;
     left: 12px;
     top: 15px;
@@ -93,23 +93,23 @@
   }  
   
   &.facebook:before {
-    content:'\F30C';    
+    content:'\&';    
   }
   
   &.twitter:before {
-    content:'\F309';
+    content:'\%';
   } 
   
   &.web:before {
-    content:'\27A6';
+    content:'\)';
   } 
   
   &.dimmi:before {
-    content:'\2302';
+    content:'\,';
   } 
   
   &.other:before {
-    content:'\E75B';
+    content:'\*';
   } 
   
 }
