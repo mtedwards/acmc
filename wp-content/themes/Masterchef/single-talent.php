@@ -8,7 +8,6 @@
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      	<header>
       	 <div class="row">
       	 	<div class="small-6 columns">
       	 		<h2><?php the_title(); ?></h2>
@@ -17,13 +16,18 @@
       	 		<h4><a href="/talent"><span class="entypo-left-open-big"></span> Back to Talent</a></h4>
       	 	</div>  
       	 </div>
-      	</header>
-      	<div class="entry-content module">
-      	  <?php 
-      	   the_post_thumbnail();
-      	   get_template_part('includes/contact-buttons');
-        	 the_content();
-          ?>
+      	<div class="entry-content module"> 
+      	  <div class="row">
+      	  	<div class="small-12 columns">
+      	  		 <?php the_post_thumbnail(); ?>
+      	  	</div> 
+      	  </div>
+      	  <div class="row">
+      	  	<div class="small-12 columns">
+      	  		 <?php get_template_part('includes/contact-buttons'); ?>
+      	  		 <?php the_content(); ?>
+      	  	</div> 
+      	  </div>
       	</div>
       	<hr />
       </article>
