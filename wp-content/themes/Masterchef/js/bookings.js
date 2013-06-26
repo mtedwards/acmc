@@ -1,6 +1,6 @@
 
  //$('.bookings>article:nth-of-type(7n)').after('<div class="content"></div>');
- 
+
  $('.bookings>article a').on('click',function(e){
   // Stop Link from working
   e.preventDefault();

@@ -1,19 +1,19 @@
-// Make sure the charset is set appropriately
 @charset "UTF-8";
 @import
-  "foundation/variables",
+  "variables",
   "compass/css3",
-  "foundation/global",
-  "foundation/grid",
-  "foundation/type",
-  "foundation/buttons",
-  "foundation/top-bar",
+  "global",
+  "grid",
+  "type",
+  "buttons",
+  "top-bar",
   "custom-setup",
   "toolkit",
   "header",
   "footer",
   "talent",
   "bookings",
+  "sidebar",
   "boxed";
 
 

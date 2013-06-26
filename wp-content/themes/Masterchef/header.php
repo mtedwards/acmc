@@ -40,7 +40,7 @@
   	<nav class="top-bar">
   	    <ul class="title-area">
   	    <li class="name"></li>
-  			<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  			<li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
   	   </ul>
   	    <section class="top-bar-section">
   	    <?php

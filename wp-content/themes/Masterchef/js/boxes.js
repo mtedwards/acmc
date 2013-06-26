@@ -1,5 +1,5 @@
 // Define Functions
-
+ if($('.boxes article').length){
 function contentDiv() {
     $('.added').remove();
     $('.boxes article').removeClass('current');
@@ -68,3 +68,4 @@ $('.boxes').on('click', 'article',function(e){
   }
  
  });
+   }
