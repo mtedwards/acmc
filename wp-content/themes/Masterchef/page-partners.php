@@ -10,14 +10,13 @@
       					<article>
                 <?php // Initial displayed section ?>
                 <a href="#">  
-                  <img src="<?php echo $prem['image']; ?>"/>
+                  <img src="<?php echo $prem['image']; ?>" alt="<?php echo $prem['title']; ?>"/>
                   <div class="small-details">
                     <b><?php echo $prem['title']; ?></b>
                   </div>
                 </a>
                 <?php // Popup section ?>
                 <div class="details">
-                  <img src="<?php echo $prem['image']; ?>"/>
               		<div class="row">
               		  <div class="small-12  columns">
               				<h4><?php echo $prem['title']; ?></h4>
@@ -41,14 +40,13 @@
       					<article>
                 <?php // Initial displayed section ?>
                 <a href="#">  
-                  <img src="<?php echo $mid['image']; ?>"/>
+                  <img src="<?php echo $mid['image']; ?>" alt="<?php echo $mid['title']; ?>"/>
                   <div class="small-details">
                     <b><?php echo $mid['title']; ?></b>
                   </div>
                 </a>
                 <?php // Popup section ?>
                 <div class="details">
-                  <img src="<?php echo $mid['image']; ?>"/>
               		<div class="row">
               		  <div class="small-12  columns">
               				<h4><?php echo $mid['title']; ?></h4>
@@ -71,7 +69,7 @@
 					 if($low_partners){ ?>
 					   <div class="tier_3">
     					<?php foreach($low_partners as $low){ ?>
-      					<a href="<?php echo $low['link']; ?>"><img src="<?php echo $low['image']; ?>"/></a>
+      					<a href="<?php echo $low['link']; ?>"><img src="<?php echo $low['image']; ?>" alt="MasterChef Dining Partner"/></a>
     				<?php	
     				  } //foreach ?>
 					   </div>

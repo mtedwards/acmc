@@ -23,13 +23,13 @@
   <?php // Popup section ?>
   <div class="details">
 		<div class="row">
-		  <div class="large-6 small-6 columns">
+		  <div class="small-12 columns">
 				<h4><?php echo $name; ?></h4>
-		  </div>
-		  <div class="large-6 small-6 columns right">
-		    <div class="contact-buttons">
+		    <!--
+  		    <div class="contact-buttons right">
 				 <a href="<?php the_field('weblink'); ?>" target="_blank" class="button web">Book now</a>
 		    </div>
+		    -->
 		  </div>
 		</div>
 		<div class="row">

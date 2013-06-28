@@ -43,6 +43,8 @@ $('.filters a').click(function(e){
   });
 
 
+
+
 // ARTICLE CLICK
 $('.boxes').on('click', 'article > a',function(e){
   e.preventDefault();
