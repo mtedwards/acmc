@@ -1,5 +1,5 @@
 // Define Functions
- if($('.boxes article').length){
+
 function contentDiv() {
     $('.added').remove();
     $('.boxes article').removeClass('current');
@@ -15,14 +15,11 @@ function contentDiv() {
     $('article.show:nth-of-type(' + ratio + ')').after('<div class="content added"></div>');
 }
 
-// Fire everything to start off
-$('.boxes article').addClass('show');
-contentDiv();
+if($('.boxes article').length){
+    $('.boxes article').addClass('show');
+    setTimeout(contentDiv, 500);
+}
 
-// RESIZE -   
-$(window).resize(function() {
-  contentDiv();
-});
 
 // filtering
 var articles = $('.boxes article');
@@ -47,25 +44,26 @@ $('.filters a').click(function(e){
 
 
 // ARTICLE CLICK
-$('.boxes').on('click', 'article',function(e){
+$('.boxes').on('click', 'article > a',function(e){
   e.preventDefault();
-  content = $(this).find('div.details').html();
-  box = $(this).nextAll('.content').first();
-  if($(this).hasClass('current')) {
+  thisArticle = $(this).closest('article');
+  content = $(thisArticle).find('div.details').html();
+  box = $(thisArticle).nextAll('.content').first();
   
-     $(this).removeClass('current');
+  if($(thisArticle).hasClass('current')) {
+  
+     $(thisArticle).removeClass('current');
      $(box).removeClass('open').empty();
-     $(this).parent().find('.content').empty(); 
+     $(thisArticle).parent().find('.content').empty(); 
  
   } else {
  
     $('article').removeClass('current');
-    $(this).addClass('current');
-    $(this).parent().find('.content').empty(); 
+    $(thisArticle).addClass('current');
+    $(thisArticle).parent().find('.content').empty(); 
     $('.open').removeClass('open').empty();
     $(box).addClass('open').html(content);
   
   }
  
  });
-   }

@@ -108,7 +108,7 @@ function reverie_scripts_and_styles() {
   if (!is_admin()) {
 
     // modernizr (without media query polyfill)
-    wp_register_script( 'reverie-modernizr', get_template_directory_uri() . '/js/vendor/custom.modernizr.js', array(), '2.6.2', false );
+    wp_register_script( 'reverie-modernizr', get_template_directory_uri() . '/js/vendor/custom.modernizr-ck.js', array(), '2.6.2', false );
 
     // ie-only style sheet
     wp_register_style( 'reverie-ie-only', get_template_directory_uri() . '/css/ie.css', array(), '' );
@@ -122,7 +122,7 @@ function reverie_scripts_and_styles() {
     wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", false, null, true);
     
     // adding Foundation scripts file in the footer
-    wp_register_script( 'reverie-js', get_template_directory_uri() . '/js/foundation-ck.js', array( 'jquery' ), '', true );
+    wp_register_script( 'reverie-js', get_template_directory_uri() . '/js/foundation-ck.js', array( 'jquery' ), '1', true );
     
     wp_register_script ( 'html5shiv', "http://html5shiv.googlecode.com/svn/trunk/html5.js" , false, true);
 

@@ -22,10 +22,18 @@
   
   <?php // Popup section ?>
   <div class="details">
-    <?php echo $img; ?>
 		<div class="row">
-		  <div class="large-6 columns">
+		  <div class="large-6 small-6 columns">
 				<h4><?php echo $name; ?></h4>
+		  </div>
+		  <div class="large-6 small-6 columns right">
+		    <div class="contact-buttons">
+				 <a href="<?php the_field('weblink'); ?>" target="_blank" class="button web">Book now</a>
+		    </div>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="large-8 small-12 large-centered columns">
 				<?php 
   				$options = get_field('options');
   				foreach($options as $option){
@@ -35,11 +43,6 @@
     			 }	
   				}
 				?>
-		  </div>
-		  <div class="large-6 columns right">
-		    <div class="contact-buttons">
-				 <a href="<?php the_field('weblink'); ?>" target="_blank" class="button web">Book now</a>
-		    </div>
 		  </div>
 		</div>
   </div><?php // end popup section ?>

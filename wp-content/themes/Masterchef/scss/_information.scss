@@ -1,0 +1,10 @@
+.boxes .content  a.map img {
+  width: 100%;
+  margin-bottom: $padding;
+  
+  @media (min-width:615px) {
+    width: 48%;
+    float: right;
+    margin-left: 4%;
+  }
+}

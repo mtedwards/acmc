@@ -3,8 +3,27 @@
 
 <footer class="full-width" role="contentinfo">
   <div class="row">
-  	<div class="small-12 large-14 columns">
-		  <?php the_field('footer_text','options'); ?>
+  	<div class="small-12 large-12 columns">
+		  <?php $logos = get_field('partner_logos','options'); 
+  		  if($logos) { ?>
+    		 <ul class="footer_logos"> 
+    		  <?php foreach($logos as $logo) { ?>
+    		    <li>
+    		      <a href="<?php echo $logo['logo_link']; ?>" target="_blank">
+    		        <?php $logo_img = $logo['logo_image']; ?>
+    		        <img src="<?php echo $logo_img['url']; ?>" alt="<?php echo $logo_img['alt']; ?>"/>
+    		      </a>
+    		    </li>
+    		  <?php } // end for each ?>
+    		 </ul>
+  		 <? } // end if logos?>  
+		  <ul>
+		  </ul>
+		</div>
+  </div>
+  <div class="row">
+  	<div class="small-12 large-8 large-centered columns">
+		  <small><?php the_field('footer_text','options'); ?></small>
 		</div>
   </div>
 </footer>

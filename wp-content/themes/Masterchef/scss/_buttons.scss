@@ -7,7 +7,7 @@
   margin: 0 0 5px;
   text-transform: uppercase;
   @include transition-duration(0.5s);
-  font-family: $heading-text;
+  font-family: $body-text;
   background: white;
   color: $primary-color;
   &.white-trans {
@@ -18,9 +18,10 @@
 	  background: #fff;
   }
   
-  span {
+  i {
     font-size: 0.7rem;
-    @media (max-width:907px) and (min-width:768px) {
+    font-style: normal;
+    @media (max-width:944px) and (min-width:675px) {
       display: block;
     }
   }
@@ -47,6 +48,7 @@
   h2 {
     a.button {
       font-size: 0.8*$big-screen-font-size;
+      font-weight: 500;
       width: 60%;
       padding: 5px 5px;
       position: absolute;
@@ -71,10 +73,9 @@
 
 
 .contact-buttons .button {
-  @include basefont;
   background: $primary-color;
   color: #fff;
-  font-size: 1em;
+  font-size: 13px;
   padding: 1em 0px 1em 4em;
   
   &:before {

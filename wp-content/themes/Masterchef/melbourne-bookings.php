@@ -2,13 +2,19 @@
 /*
   Template Name: Bookings Melbourne
 */
-get_header(); ?>
+get_header(); the_post();?>
 
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns bookings" role="main">
-	 	<div class="filters">
+	 	<div class="filter-link">
 		   <a href="<?php bloginfo('url'); ?>/sydney">SYDNEY</a>
 		   <a class="active-filter" href="<?php bloginfo('url'); ?>/melbourne">MELBOURNE</a>
+	 	</div>
+		
+		<div class="row bookings-text">
+	 		<div class="small-12 columns">
+	 			<?php the_content(); ?>
+	 		</div> 
 	 	</div>
 		
 		<article class="day"><a>M</a></article>
@@ -648,8 +654,14 @@ get_header(); ?>
 			
 			// Reset Post Data
 			wp_reset_postdata();
-			
 			?>
+		<div class="row">
+				<div class="small-12 columns guide">
+					<h5>Date Guide</h5>
+					<p><b class="date-guide"></b>Dates in orange are sold out.</p>
+				</div> 
+			</div>
+
 	
 	</div>
 	<?php get_sidebar(); ?>

@@ -11,15 +11,28 @@
     <a href="#" data-filter="sydney">SYDNEY</a>
     <a href="#" data-filter="melbourne">MELBOURNE</a>
   </div>
-	<?php if ( have_posts() ) : ?>
+ 
+ <?php
+ $args = array( 
+     'post_type' => array('talent'),      
+     'posts_per_page' => 50,                
+     'order' => 'ASC',
+     'orderby' => 'title',
+     );
+ 
+ $the_query = new WP_Query( $args );
+ 
+  if ( $the_query->have_posts() ) : ?>
 		<div class="boxes">
-  		<?php /* Start the Loop */ ?>
-  		<?php while ( have_posts() ) : the_post(); ?>
+  		
+  		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
   			<?php get_template_part('talent-box'); ?>
   		<?php endwhile; ?>
   		<div class="content"></div>
 		</div>
-	<?php endif; // end have_posts() check ?>
+	<?php endif; // end have_posts() check 
+	   // Reset Post Data
+	   wp_reset_postdata(); ?>
 	</div>
 	<?php get_sidebar(); ?>
 		

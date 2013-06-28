@@ -1,7 +1,28 @@
 footer.full-width {
   background: #222;
-  color: $mcgrey;
+  color: white;
   padding: $padding 0;
   text-align: center;
   margin-top: 2*$padding;
+  p {
+    color: white;
+    a {
+      color: $mcgrey;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+ul.footer_logos {
+  list-style: none;
+  text-align: center;
+  li {
+    display: inline-block; 
+    margin-right: $padding;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

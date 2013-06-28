@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: 'mcdicon';
-  src: url("fonts/mcdicon.eot"); }
+  src: url("../fonts/mcdicon.eot"); }
 
 @font-face {
   font-family: 'mcdicon';
@@ -47,7 +47,7 @@
   font-style: normal; }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 14, ../scss/_mcdicon.scss */
+/* line 15, ../scss/_mcdicon.scss */
 [data-icon]:before {
   font-family: 'mcdicon';
   content: attr(data-icon);
@@ -64,7 +64,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-/* line 31, ../scss/_mcdicon.scss */
+/* line 32, ../scss/_mcdicon.scss */
 .icon-untitled, .icon-mail, .icon-cross, .icon-link, .icon-twitter, .icon-facebook, .icon-pinterest, .icon-plus, .icon-forward, .icon-house, .icon-arrow-up, .icon-food {
   font-family: 'mcdicon';
   speak: none;
@@ -75,51 +75,51 @@ you can use the generic selector below, but it's slower:
   line-height: 1;
   -webkit-font-smoothing: antialiased; }
 
-/* line 41, ../scss/_mcdicon.scss */
+/* line 42, ../scss/_mcdicon.scss */
 .icon-untitled:before {
   content: "\21"; }
 
-/* line 44, ../scss/_mcdicon.scss */
+/* line 45, ../scss/_mcdicon.scss */
 .icon-mail:before {
   content: "\22"; }
 
-/* line 47, ../scss/_mcdicon.scss */
+/* line 48, ../scss/_mcdicon.scss */
 .icon-cross:before {
   content: "\23"; }
 
-/* line 50, ../scss/_mcdicon.scss */
+/* line 51, ../scss/_mcdicon.scss */
 .icon-link:before {
   content: "\24"; }
 
-/* line 53, ../scss/_mcdicon.scss */
+/* line 54, ../scss/_mcdicon.scss */
 .icon-twitter:before {
   content: "\25"; }
 
-/* line 56, ../scss/_mcdicon.scss */
+/* line 57, ../scss/_mcdicon.scss */
 .icon-facebook:before {
   content: "\26"; }
 
-/* line 59, ../scss/_mcdicon.scss */
+/* line 60, ../scss/_mcdicon.scss */
 .icon-pinterest:before {
   content: "\27"; }
 
-/* line 62, ../scss/_mcdicon.scss */
+/* line 63, ../scss/_mcdicon.scss */
 .icon-plus:before {
   content: "\28"; }
 
-/* line 65, ../scss/_mcdicon.scss */
+/* line 66, ../scss/_mcdicon.scss */
 .icon-forward:before {
   content: "\29"; }
 
-/* line 68, ../scss/_mcdicon.scss */
+/* line 69, ../scss/_mcdicon.scss */
 .icon-house:before {
   content: "\2a"; }
 
-/* line 71, ../scss/_mcdicon.scss */
+/* line 72, ../scss/_mcdicon.scss */
 .icon-arrow-up:before {
   content: "\2b"; }
 
-/* line 74, ../scss/_mcdicon.scss */
+/* line 75, ../scss/_mcdicon.scss */
 .icon-food:before {
   content: "\2c"; }
 
@@ -932,7 +932,7 @@ blockquote p {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background: white;
   color: #111111; }
   /* line 13, ../scss/_buttons.scss */
@@ -942,13 +942,14 @@ blockquote p {
   .button.white {
     background: #fff; }
   /* line 21, ../scss/_buttons.scss */
-  .button span {
-    font-size: 0.7rem; }
-    @media (max-width: 907px) and (min-width: 768px) {
+  .button i {
+    font-size: 0.7rem;
+    font-style: normal; }
+    @media (max-width: 944px) and (min-width: 675px) {
       /* line 21, ../scss/_buttons.scss */
-      .button span {
+      .button i {
         display: block; } }
-  /* line 28, ../scss/_buttons.scss */
+  /* line 29, ../scss/_buttons.scss */
   .button:after {
     font-family: 'mcdicon', sans-serif;
     content: '\!';
@@ -960,48 +961,44 @@ blockquote p {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-  /* line 38, ../scss/_buttons.scss */
+  /* line 39, ../scss/_buttons.scss */
   .button:hover {
     background: rgba(255, 255, 255, 0.9); }
-    /* line 40, ../scss/_buttons.scss */
+    /* line 41, ../scss/_buttons.scss */
     .button:hover:after {
       right: 6px; }
 
-/* line 48, ../scss/_buttons.scss */
+/* line 49, ../scss/_buttons.scss */
 #sidebar h2 a.button {
   font-size: 10.4px;
+  font-weight: 500;
   width: 60%;
   padding: 5px 5px;
   position: absolute;
   top: 7px;
   right: 5px; }
-  /* line 55, ../scss/_buttons.scss */
+  /* line 57, ../scss/_buttons.scss */
   #sidebar h2 a.button:after {
     top: 6px;
     font-size: 1.2em; }
   @media screen and (min-width: 915px) {
-    /* line 48, ../scss/_buttons.scss */
+    /* line 49, ../scss/_buttons.scss */
     #sidebar h2 a.button {
       padding: 10px 5px;
       font-size: 13px; }
-      /* line 62, ../scss/_buttons.scss */
+      /* line 64, ../scss/_buttons.scss */
       #sidebar h2 a.button:after {
         top: 10px;
         right: 5px;
         font-size: 1.5em; } }
 
-/* line 73, ../scss/_buttons.scss */
+/* line 75, ../scss/_buttons.scss */
 .contact-buttons .button {
-  font-size: 16px;
   background: #111111;
   color: #fff;
-  font-size: 1em;
+  font-size: 13px;
   padding: 1em 0px 1em 4em; }
-  @media only screen and (min-width: 920px) {
-    /* line 73, ../scss/_buttons.scss */
-    .contact-buttons .button {
-      font-size: 13px; } }
-  /* line 80, ../scss/_buttons.scss */
+  /* line 81, ../scss/_buttons.scss */
   .contact-buttons .button:before {
     font-family: 'mcdicon', sans-serif;
     content: '\&';
@@ -1010,22 +1007,22 @@ blockquote p {
     top: 15px;
     font-size: 1.5em; }
   @media only screen and (min-width: 920px) {
-    /* line 89, ../scss/_buttons.scss */
+    /* line 90, ../scss/_buttons.scss */
     .contact-buttons .button:after, .contact-buttons .button:before {
       top: 12px; } }
-  /* line 95, ../scss/_buttons.scss */
+  /* line 96, ../scss/_buttons.scss */
   .contact-buttons .button.facebook:before {
     content: '\&'; }
-  /* line 99, ../scss/_buttons.scss */
+  /* line 100, ../scss/_buttons.scss */
   .contact-buttons .button.twitter:before {
     content: '\%'; }
-  /* line 103, ../scss/_buttons.scss */
+  /* line 104, ../scss/_buttons.scss */
   .contact-buttons .button.web:before {
     content: '\)'; }
-  /* line 107, ../scss/_buttons.scss */
+  /* line 108, ../scss/_buttons.scss */
   .contact-buttons .button.dimmi:before {
     content: '\,'; }
-  /* line 111, ../scss/_buttons.scss */
+  /* line 112, ../scss/_buttons.scss */
   .contact-buttons .button.other:before {
     content: '\*'; }
 
@@ -1438,12 +1435,6 @@ body {
   padding: 20px;
   position: relative; }
 
-/* line 13, ../scss/_toolkit.scss */
-.single-talent .contact-buttons {
-  float: right;
-  width: 50%;
-  margin: 0 0 20px 20px; }
-
 /* line 1, ../scss/_header.scss */
 header.mainhead {
   position: relative;
@@ -1455,10 +1446,10 @@ header.mainhead {
     top: 0;
     width: 100%; }
   /* line 12, ../scss/_header.scss */
-  header.mainhead .row h1 a {
+  header.mainhead .header-image h1 a {
     width: 300px;
     height: 300px;
-    background: rgba(0, 0, 0, 0.7) url(../img/logo.png) no-repeat center center;
+    background: url(../img/mcd-logo.png) no-repeat center center;
     text-indent: -9999px;
     display: block;
     margin: 10px auto;
@@ -1471,40 +1462,54 @@ header.mainhead {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s; }
-    @media only screen and (min-width: 920px) {
+    /* line 16, ../scss/_header.scss */
+    .rgba header.mainhead .header-image h1 a {
+      background: rgba(0, 0, 0, 0.7) url(../img/logo.png) no-repeat center center; }
+      /* line 18, ../scss/_header.scss */
+      .rgba header.mainhead .header-image h1 a:hover {
+        background: rgba(0, 0, 0, 0.8) url(../img/logo.png) no-repeat center center; }
+    @media (min-width: 675px) {
       /* line 12, ../scss/_header.scss */
-      header.mainhead .row h1 a {
+      header.mainhead .header-image h1 a {
         margin: 70px 0; } }
-    /* line 24, ../scss/_header.scss */
-    header.mainhead .row h1 a:hover {
-      background: rgba(0, 0, 0, 0.8) url(../img/logo.png) no-repeat center center; }
-  /* line 31, ../scss/_header.scss */
+  /* line 35, ../scss/_header.scss */
   header.mainhead .call-to-action {
     position: relative; }
-    @media only screen and (min-width: 920px) {
-      /* line 31, ../scss/_header.scss */
+    @media (max-width: 944px) and (min-width: 675px) {
+      /* line 35, ../scss/_header.scss */
       header.mainhead .call-to-action {
-        top: 264px; } }
-    @media (max-width: 907px) and (min-width: 768px) {
-      /* line 37, ../scss/_header.scss */
-      header.mainhead .call-to-action .button {
-        padding: 5px 10px; } }
+        position: absolute;
+        top: 264px;
+        right: 0;
+        padding: 0 0.9375em;
+        width: 33.3333%; }
+        /* line 44, ../scss/_header.scss */
+        header.mainhead .call-to-action .button {
+          padding: 5px 10px; } }
+    @media (min-width: 944px) {
+      /* line 35, ../scss/_header.scss */
+      header.mainhead .call-to-action {
+        position: absolute;
+        top: 264px;
+        right: 0;
+        padding: 0 0.9375em;
+        width: 33.3333%; } }
 
-/* line 44, ../scss/_header.scss */
+/* line 64, ../scss/_header.scss */
 .main-content {
   margin-top: 40px; }
 
 /* Slider Images */
-/* line 50, ../scss/_header.scss */
+/* line 70, ../scss/_header.scss */
 .slider {
   position: relative; }
   @media (max-width: 1470px) {
-    /* line 50, ../scss/_header.scss */
+    /* line 70, ../scss/_header.scss */
     .slider {
       width: 1470px;
       left: 50%;
       margin-left: -735px; } }
-  /* line 57, ../scss/_header.scss */
+  /* line 77, ../scss/_header.scss */
   .slider img {
     position: absolute;
     top: 0;
@@ -1514,17 +1519,38 @@ header.mainhead {
     -moz-transition: 2s;
     -o-transition: 2s;
     transition: 2s; }
-    /* line 63, ../scss/_header.scss */
+    /* line 83, ../scss/_header.scss */
     .slider img.active {
       opacity: 1; }
 
 /* line 1, ../scss/_footer.scss */
 footer.full-width {
   background: #222;
-  color: #878785;
+  color: white;
   padding: 20px 0;
   text-align: center;
   margin-top: 40px; }
+  /* line 7, ../scss/_footer.scss */
+  footer.full-width p {
+    color: white; }
+    /* line 9, ../scss/_footer.scss */
+    footer.full-width p a {
+      color: #878785; }
+      /* line 11, ../scss/_footer.scss */
+      footer.full-width p a:hover {
+        color: white; }
+
+/* line 18, ../scss/_footer.scss */
+ul.footer_logos {
+  list-style: none;
+  text-align: center; }
+  /* line 21, ../scss/_footer.scss */
+  ul.footer_logos li {
+    display: inline-block;
+    margin-right: 20px; }
+    /* line 24, ../scss/_footer.scss */
+    ul.footer_logos li:last-child {
+      margin-right: 0; }
 
 /* line 2, ../scss/_talent.scss */
 .boxes article {
@@ -1628,35 +1654,65 @@ footer.full-width {
 .boxes .content.open {
   max-height: 1000px;
   padding: 20px;
+  margin-bottom: 20px;
   opacity: 1; }
   @media only screen and (min-width: 400px) {
     /* line 101, ../scss/_talent.scss */
     .boxes .content.open {
-      margin: 0 2% 10px 0; } }
+      margin: 0 2% 20px 0; } }
   @media only screen and (min-width: 920px) {
     /* line 101, ../scss/_talent.scss */
     .boxes .content.open {
-      margin: 0 3% 10px 0; } }
+      margin: 0 3% 20px 0; } }
+  /* line 112, ../scss/_talent.scss */
+  .boxes .content.open img {
+    width: 100%;
+    height: auto; }
 
-/* line 115, ../scss/_talent.scss */
-.filters {
+/* line 120, ../scss/_talent.scss */
+.filters, .filter-link {
   margin: 20px 0; }
-  /* line 117, ../scss/_talent.scss */
-  .filters a {
+  /* line 122, ../scss/_talent.scss */
+  .filters a, .filter-link a {
     padding-right: 20px;
     color: #878785;
     font-family: "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
-    /* line 121, ../scss/_talent.scss */
-    .filters a:hover, .filters a.active-filter {
+    /* line 126, ../scss/_talent.scss */
+    .filters a:hover, .filters a.active-filter, .filter-link a:hover, .filter-link a.active-filter {
       color: #111111; }
 
+/* line 133, ../scss/_talent.scss */
+.contact-buttons {
+  margin-bottom: 20px; }
+  @media (min-width: 615px) {
+    /* line 133, ../scss/_talent.scss */
+    .contact-buttons {
+      width: 48%;
+      float: right;
+      margin-left: 4%; } }
+  @media (min-width: 800px) {
+    /* line 133, ../scss/_talent.scss */
+    .contact-buttons {
+      width: 100%;
+      float: none;
+      margin-left: 0; } }
+  @media (min-width: 906px) {
+    /* line 133, ../scss/_talent.scss */
+    .contact-buttons {
+      width: 48%;
+      float: right;
+      margin-left: 4%; } }
+
 /* line 3, ../scss/_bookings.scss */
+.bookings .bookings-text {
+  margin-bottom: 20px; }
+/* line 7, ../scss/_bookings.scss */
 .bookings article {
   display: inline;
   float: left;
   width: 14.2857%;
   height: 45px; }
-  /* line 9, ../scss/_bookings.scss */
+  /* line 13, ../scss/_bookings.scss */
   .bookings article a {
     padding-top: 5px;
     width: 100%;
@@ -1680,7 +1736,7 @@ footer.full-width {
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in; }
-    /* line 24, ../scss/_bookings.scss */
+    /* line 28, ../scss/_bookings.scss */
     .bookings article a span {
       font-size: 0.8rem;
       display: block;
@@ -1688,18 +1744,18 @@ footer.full-width {
       padding: 0;
       line-height: 0.8rem;
       text-transform: uppercase; }
-    /* line 26, ../scss/_bookings.scss */
+    /* line 30, ../scss/_bookings.scss */
     .bookings article a.closed {
       color: #878785; }
-    /* line 30, ../scss/_bookings.scss */
+    /* line 34, ../scss/_bookings.scss */
     .bookings article a.sold {
       color: #f27d00; }
-    /* line 35, ../scss/_bookings.scss */
+    /* line 39, ../scss/_bookings.scss */
     .bookings article a.select, .bookings article a:hover {
       background: #111111;
       border-bottom: 1px solid #111111;
       color: white; }
-  /* line 43, ../scss/_bookings.scss */
+  /* line 47, ../scss/_bookings.scss */
   .bookings article.day a {
     text-align: center;
     border: none;
@@ -1707,28 +1763,28 @@ footer.full-width {
     color: #fff;
     height: 45px;
     line-height: 45px; }
-/* line 53, ../scss/_bookings.scss */
+/* line 57, ../scss/_bookings.scss */
 .bookings .today a {
   background: #111111; }
-/* line 59, ../scss/_bookings.scss */
+/* line 63, ../scss/_bookings.scss */
 .bookings .done a {
   background: #555;
   color: #878785; }
-/* line 65, ../scss/_bookings.scss */
+/* line 69, ../scss/_bookings.scss */
 .bookings article div {
   display: none; }
-/* line 69, ../scss/_bookings.scss */
+/* line 73, ../scss/_bookings.scss */
 .bookings .content a.image-box {
   width: 33%;
   display: block;
   float: left;
   color: white;
   font-weight: bold; }
-  /* line 76, ../scss/_bookings.scss */
+  /* line 80, ../scss/_bookings.scss */
   .bookings .content a.image-box img {
     margin: 20px 0 10px 0;
     padding: 0; }
-/* line 83, ../scss/_bookings.scss */
+/* line 87, ../scss/_bookings.scss */
 .bookings .content.open {
   background: #111111;
   display: block;
@@ -1737,22 +1793,26 @@ footer.full-width {
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
   color: #fff; }
-  /* line 92, ../scss/_bookings.scss */
+  /* line 96, ../scss/_bookings.scss */
   .bookings .content.open h4 {
     font-size: 1.3em;
     font-weight: 100;
     padding: 0 0 20px;
     margin: 0;
     color: #fff; }
-  /* line 100, ../scss/_bookings.scss */
+  /* line 104, ../scss/_bookings.scss */
   .bookings .content.open h6 {
     padding: 0;
     margin: 10px 0;
     color: #f27d00; }
-/* line 107, ../scss/_bookings.scss */
+/* line 111, ../scss/_bookings.scss */
 .bookings .guide {
   margin-top: 20px; }
-/* line 111, ../scss/_bookings.scss */
+  /* line 113, ../scss/_bookings.scss */
+  .bookings .guide p {
+    line-height: 20px;
+    height: 20px; }
+/* line 119, ../scss/_bookings.scss */
 .bookings b.date-guide {
   display: inline-block;
   height: 20px;
@@ -2011,3 +2071,14 @@ footer.full-width {
 /* line 56, ../scss/_boxed.scss */
 .boxed article a:hover .small-details:after {
   right: 6px; }
+
+/* line 1, ../scss/_information.scss */
+.boxes .content a.map img {
+  width: 100%;
+  margin-bottom: 20px; }
+  @media (min-width: 615px) {
+    /* line 1, ../scss/_information.scss */
+    .boxes .content a.map img {
+      width: 48%;
+      float: right;
+      margin-left: 4%; } }

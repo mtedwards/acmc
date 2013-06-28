@@ -22,7 +22,7 @@
 @import url("//hello.myfonts.net/count/2779d2");
 
   
-@font-face {font-family: 'EurostileLTPro';src: url('../fonts/2779D2_0_0.eot');src: url('../fonts/2779D2_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2779D2_0_0.woff') format('woff'),url('../fonts/2779D2_0_0.ttf') format('truetype');}
+@font-face {font-family: 'EurostileLTPro'; src: url('../fonts/2779D2_0_0.eot'); src: url('../fonts/2779D2_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2779D2_0_0.woff') format('woff'),url('../fonts/2779D2_0_0.ttf') format('truetype');}
 
 *,
 *:before,
@@ -36,7 +36,7 @@
 
 $big: 920px;
 $med: 400px;
-
+$no-side: 800px;
 
 
 @mixin bp($point) {

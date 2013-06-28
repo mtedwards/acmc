@@ -23,14 +23,6 @@
      </a>
   <?php } ?>
  
-  <?php // Dimmi
-   $dim = get_field('dimtext');
-   if($dim) {?>
-     <a href="<?php the_field('dimlink'); ?>" target="_blank" class="button dimmi">
-       <?php echo $dim; ?>
-     </a>
-  <?php } ?>
- 
   <?php // Other
    $other = get_field('othertext');
    if($other) {?>
@@ -38,4 +30,18 @@
        <?php echo $other; ?>
      </a>
   <?php } ?>
+  
+    <?php // Dimmi
+   $dim = get_field('dimtext');
+   if($dim) {
+     if(is_page('Talent')){} else {
+   ?>
+     <a href="<?php the_field('dimlink'); ?>" target="_blank" class="button dimmi">
+       <?php echo $dim; ?>
+     </a>
+  <?php 
+    } // end if Talent
+  } // end if Dimmi
+  ?>
+  
 </div>

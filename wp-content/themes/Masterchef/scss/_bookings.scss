@@ -1,4 +1,8 @@
 .bookings {
+
+  .bookings-text {
+    margin-bottom: $padding;
+  }
 	
 	article {
 		display: inline;
@@ -106,6 +110,10 @@
 	
 	.guide {
   	margin-top: $padding;
+  	p {
+    	line-height: 20px;
+    	height: 20px;
+  	}
 	}
 	
 	b.date-guide {

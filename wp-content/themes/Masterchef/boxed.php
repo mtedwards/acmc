@@ -8,7 +8,7 @@
  ?>
 <article>
   <a href="<?php echo $link; ?>">
-    <img src="<?php echo $image; ?>">
+    <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
     <div class="small-details">
       <b><?php echo $title; ?></b>
     </div>
