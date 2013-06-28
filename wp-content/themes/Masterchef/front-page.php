@@ -27,17 +27,15 @@
   					<?php the_content(); ?>
   				</div>
   				<div class="row">
-  					<div class="large-5 columns">
+  					<div class="large-6 columns">
   						<!-- <a href="<?php the_field('syd_link','options') ?>" class="button white" target="_blank">Book Sydney</a> -->
   						<a href="/sydney" class="button white">Sydney On Sale July 16</a>
       		  
   					</div>
-  				  <div class="large-5 columns">
+  				  <div class="large-6 columns">
   						<!-- <a href="<?php the_field('melb_link','options') ?>" class="button white" target="_blank">Book Melbourne</a> -->
   						<a href="/melbourne" class="button white">Melbourne On Sale July 16</a>
   					</div> 
-  					<div class="large-2 columns">
-  					</div>
   				</div>
   		  <hr>
 			</article>	

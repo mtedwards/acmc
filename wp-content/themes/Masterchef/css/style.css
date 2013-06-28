@@ -943,13 +943,12 @@ blockquote p {
     background: #fff; }
   /* line 21, ../scss/_buttons.scss */
   .button i {
-    font-size: 0.7rem;
     font-style: normal; }
     @media (max-width: 944px) and (min-width: 675px) {
       /* line 21, ../scss/_buttons.scss */
       .button i {
         display: block; } }
-  /* line 29, ../scss/_buttons.scss */
+  /* line 30, ../scss/_buttons.scss */
   .button:after {
     font-family: 'mcdicon', sans-serif;
     content: '\!';
@@ -961,14 +960,18 @@ blockquote p {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-  /* line 39, ../scss/_buttons.scss */
+  /* line 40, ../scss/_buttons.scss */
   .button:hover {
     background: rgba(255, 255, 255, 0.9); }
-    /* line 41, ../scss/_buttons.scss */
+    /* line 42, ../scss/_buttons.scss */
     .button:hover:after {
       right: 6px; }
 
-/* line 49, ../scss/_buttons.scss */
+/* line 48, ../scss/_buttons.scss */
+.call-to-action .button i {
+  font-size: 0.7rem; }
+
+/* line 52, ../scss/_buttons.scss */
 #sidebar h2 a.button {
   font-size: 10.4px;
   font-weight: 500;
@@ -977,28 +980,28 @@ blockquote p {
   position: absolute;
   top: 7px;
   right: 5px; }
-  /* line 57, ../scss/_buttons.scss */
+  /* line 60, ../scss/_buttons.scss */
   #sidebar h2 a.button:after {
     top: 6px;
     font-size: 1.2em; }
   @media screen and (min-width: 915px) {
-    /* line 49, ../scss/_buttons.scss */
+    /* line 52, ../scss/_buttons.scss */
     #sidebar h2 a.button {
       padding: 10px 5px;
       font-size: 13px; }
-      /* line 64, ../scss/_buttons.scss */
+      /* line 67, ../scss/_buttons.scss */
       #sidebar h2 a.button:after {
         top: 10px;
         right: 5px;
         font-size: 1.5em; } }
 
-/* line 75, ../scss/_buttons.scss */
+/* line 78, ../scss/_buttons.scss */
 .contact-buttons .button {
   background: #111111;
   color: #fff;
   font-size: 13px;
   padding: 1em 0px 1em 4em; }
-  /* line 81, ../scss/_buttons.scss */
+  /* line 84, ../scss/_buttons.scss */
   .contact-buttons .button:before {
     font-family: 'mcdicon', sans-serif;
     content: '\&';
@@ -1007,22 +1010,22 @@ blockquote p {
     top: 15px;
     font-size: 1.5em; }
   @media only screen and (min-width: 920px) {
-    /* line 90, ../scss/_buttons.scss */
+    /* line 93, ../scss/_buttons.scss */
     .contact-buttons .button:after, .contact-buttons .button:before {
       top: 12px; } }
-  /* line 96, ../scss/_buttons.scss */
+  /* line 99, ../scss/_buttons.scss */
   .contact-buttons .button.facebook:before {
     content: '\&'; }
-  /* line 100, ../scss/_buttons.scss */
+  /* line 103, ../scss/_buttons.scss */
   .contact-buttons .button.twitter:before {
     content: '\%'; }
-  /* line 104, ../scss/_buttons.scss */
+  /* line 107, ../scss/_buttons.scss */
   .contact-buttons .button.web:before {
     content: '\)'; }
-  /* line 108, ../scss/_buttons.scss */
+  /* line 111, ../scss/_buttons.scss */
   .contact-buttons .button.dimmi:before {
     content: '\,'; }
-  /* line 112, ../scss/_buttons.scss */
+  /* line 115, ../scss/_buttons.scss */
   .contact-buttons .button.other:before {
     content: '\*'; }
 

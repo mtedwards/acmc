@@ -8,7 +8,10 @@
       <a class="addthis_button_facebook"></a>
   </div>
   <div class="widget twitter">
-    <h2>Tweets <a href="#" class="white button">@Masterchef_Aust</a></h2>
-     <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/MasterChef_Aust" data-widget-id="342532044649291776" data-chrome="noborders noheader" width="768" height="500">@MasterChef_Aust</a>
+    <h2>Tweets <a href="http://twitter.com/MCDiningandBar" class="white button" target="_blank">@MCDiningandBar</a></h2>
+     <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/MCDiningandBar" data-widget-id="342532044649291776" data-chrome="noborders noheader" width="768" height="500">@MCDiningandBar</a>
+  </div>
+  <div class="widget">
+    <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler_002.png" alt="Tip-Doubler" />
   </div>
 </aside><!-- /#sidebar -->

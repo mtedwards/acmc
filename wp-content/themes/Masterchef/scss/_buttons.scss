@@ -19,12 +19,13 @@
   }
   
   i {
-    font-size: 0.7rem;
+    
     font-style: normal;
     @media (max-width:944px) and (min-width:675px) {
       display: block;
     }
   }
+  
   
   &:after {
     font-family: 'mcdicon', sans-serif;
@@ -43,6 +44,8 @@
     }  
   }
 }
+
+.call-to-action .button i {font-size: 0.7rem;}
 
 #sidebar {
   h2 {

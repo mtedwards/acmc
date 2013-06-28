@@ -9,6 +9,16 @@
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width" />
 	<?php wp_head(); ?>
+	<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-41912894-1', 'masterchefdining.com.au');
+    ga('send', 'pageview');
+  
+  </script>
 
 </head>
 
@@ -16,9 +26,18 @@
   <header class="mainhead" role="banner">
 	<div class="slider">
 		<?php $headerImages = get_field('header_images','options');
-			foreach($headerImages as $headerImage) { ?>
-			<img src="<?php echo $headerImage['image_file']; ?>" alt="MasterChef Dining 2013"/>		
-		<?php } ?>
+		  $i = 0;
+			foreach($headerImages as $headerImage) {
+			 if($i == 0)  { ?>
+			   <img data-src="<?php echo $headerImage['image_file']; ?>" src="<?php echo $headerImage['image_file']; ?>" alt="MasterChef Dining 2013"/>		
+  		<?php 
+  			 $i++;
+  			 } else { ?>
+    			 <img data-src="<?php echo $headerImage['image_file']; ?>" alt="MasterChef Dining 2013"/>		
+  			 <?php 
+  			 $i++;
+  			 } //end if i=0;
+  		} // end for each ?>
     </div>
 
     <div class="container">
@@ -28,8 +47,8 @@
       		  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
       		</div>
       		<div class="call-to-action">
-      		  <a href="/sydney" class="button white-trans">Sydney On Sale July 16</a>
-      		  <a href="/melbourne" class="button white-trans">Melbourne On Sale July 16</a>
+      		  <a href="/sydney" class="button white-trans">Sydney <i>On Sale July 16</i></a>
+      		  <a href="/melbourne" class="button white-trans">Melbourne <i>On Sale July 16</i></a>
       		 <!--
         		 <a href="<?php the_field('syd_link','options') ?>" class="button white-trans" target="_blank">Book Sydney <i><?php the_field('syd_dates','options') ?></i></a>
       		  <a href="<?php the_field('melb_link','options') ?>" class="button white-trans" target="_blank">Book Melbourne <i><?php the_field('melb_dates','options') ?></i></a>
