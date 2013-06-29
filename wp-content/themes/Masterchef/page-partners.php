@@ -21,7 +21,7 @@
               		  <div class="small-12  columns">
               				<h4><?php echo $prem['title']; ?></h4>
               				<?php echo $prem['content']; ?>
-              				<p><a href="<?php echo $prem['link']; ?>">Visit <?php echo $prem['title']; ?>'s Website</a></p>
+              				<p><a href="<?php echo $prem['link']; ?>" target="_blank">Visit <?php echo $prem['title']; ?>'s Website</a></p>
               		  </div>
               		</div>
                 </div><?php // end popup section ?>
@@ -51,7 +51,7 @@
               		  <div class="small-12  columns">
               				<h4><?php echo $mid['title']; ?></h4>
               				<?php echo $mid['content']; ?>
-              				<p><a href="<?php echo $mid['link']; ?>">Visit <?php echo $mid['title']; ?>'s Website</a></p>
+              				<p><a href="<?php echo $mid['link']; ?>" target="_blank">Visit <?php echo $mid['title']; ?>'s Website</a></p>
               		  </div>
               		</div>
                 </div><?php // end popup section ?>
@@ -69,7 +69,7 @@
 					 if($low_partners){ ?>
 					   <div class="tier_3">
     					<?php foreach($low_partners as $low){ ?>
-      					<a href="<?php echo $low['link']; ?>"><img src="<?php echo $low['image']; ?>" alt="MasterChef Dining Partner"/></a>
+      					<a href="<?php echo $low['link']; ?>" target="_blank"><img src="<?php echo $low['image']; ?>" alt="MasterChef Dining Partner"/></a>
     				<?php	
     				  } //foreach ?>
 					   </div>

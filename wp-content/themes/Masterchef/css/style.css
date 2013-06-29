@@ -1655,7 +1655,7 @@ ul.footer_logos {
         display: block; } }
 /* line 101, ../scss/_talent.scss */
 .boxes .content.open {
-  max-height: 1000px;
+  max-height: 1500px;
   padding: 20px;
   margin-bottom: 20px;
   opacity: 1; }
@@ -1841,24 +1841,29 @@ ul.footer_logos {
 #sidebar .twitter {
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc; }
-/* line 20, ../scss/_sidebar.scss */
+  @media (max-width: 800px) and (min-width: 384px) {
+    /* line 16, ../scss/_sidebar.scss */
+    #sidebar .twitter {
+      padding-right: 2%; } }
+/* line 25, ../scss/_sidebar.scss */
 #sidebar .widget {
   margin-bottom: 10px; }
-  @media (max-width: 800px) and (min-width: 450px) {
-    /* line 20, ../scss/_sidebar.scss */
+  @media (max-width: 800px) and (min-width: 384px) {
+    /* line 25, ../scss/_sidebar.scss */
     #sidebar .widget {
-      max-width: 50%; } }
-/* line 28, ../scss/_sidebar.scss */
+      width: 50%;
+      float: left; } }
+/* line 38, ../scss/_sidebar.scss */
 #sidebar .share .at16nc, #sidebar .share .ishareactive-sm {
   background: none; }
-/* line 32, ../scss/_sidebar.scss */
+/* line 42, ../scss/_sidebar.scss */
 #sidebar .share h3 {
   display: inline-block;
   line-height: 32px;
   height: 32px;
   margin: 0;
   padding: 0; }
-/* line 40, ../scss/_sidebar.scss */
+/* line 50, ../scss/_sidebar.scss */
 #sidebar .share a {
   float: right;
   display: inline-block;
@@ -1867,30 +1872,30 @@ ul.footer_logos {
   position: relative;
   color: #111111;
   margin-right: 5px; }
-  /* line 48, ../scss/_sidebar.scss */
+  /* line 58, ../scss/_sidebar.scss */
   #sidebar .share a:hover {
     color: #878785; }
-  /* line 49, ../scss/_sidebar.scss */
+  /* line 59, ../scss/_sidebar.scss */
   #sidebar .share a:before {
     font-family: 'mcdicon', sans-serif;
     color: #111111;
     position: absolute;
     font-size: 1.5em;
     left: 5px; }
-  /* line 57, ../scss/_sidebar.scss */
+  /* line 67, ../scss/_sidebar.scss */
   #sidebar .share a.addthis_button_facebook:before {
     content: '\&';
     left: 10px; }
-  /* line 61, ../scss/_sidebar.scss */
+  /* line 71, ../scss/_sidebar.scss */
   #sidebar .share a.addthis_button_twitter:before {
     content: '\%'; }
-  /* line 64, ../scss/_sidebar.scss */
+  /* line 74, ../scss/_sidebar.scss */
   #sidebar .share a.addthis_button_email:before {
     content: '\"'; }
-  /* line 67, ../scss/_sidebar.scss */
+  /* line 77, ../scss/_sidebar.scss */
   #sidebar .share a.addthis_button_pinterest_share:before {
     content: '\''; }
-  /* line 70, ../scss/_sidebar.scss */
+  /* line 80, ../scss/_sidebar.scss */
   #sidebar .share a.addthis_button_compact:before {
     content: '\('; }
 
@@ -1911,8 +1916,7 @@ ul.footer_logos {
     margin-right: 2%; } }
 /* line 21, ../scss/_partners.scss */
 .partners .tier_2 article {
-  width: 48%;
-  margin-right: 2%; }
+  width: 100%; }
   @media only screen and (min-width: 450px) {
     /* line 21, ../scss/_partners.scss */
     .partners .tier_2 article {

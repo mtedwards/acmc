@@ -5,7 +5,7 @@ function contentDiv() {
     $('.boxes article').removeClass('current');
     var docWidth = +$('.boxes').width();
     var articleWidth = +$('.boxes article').width();
-    articleWidth = articleWidth;
+
     var ratio = docWidth / articleWidth;
     ratio = Math.floor(ratio);
     if(ratio == 0) {
@@ -17,7 +17,18 @@ function contentDiv() {
 
 function contentDiv_tier2() {
     $('.tier_2 .added').remove();
-    $('.tier_2 article.show.eq(3)').after('<div class="content added"></div>');
+    
+    var docWidth = +$('.boxes.tier_2').width();
+    var articleWidth = +$('.boxes.tier_2 article').width();
+
+    var ratio = docWidth / articleWidth;
+    ratio = Math.floor(ratio);
+    if(ratio == 0) {
+      ratio = 1;
+    }
+    ratio = ratio + 'n';
+    
+    $('.tier_2 article.show:nth-of-type(' + ratio + ')').after('<div class="content added"></div>');
 }
 
 
