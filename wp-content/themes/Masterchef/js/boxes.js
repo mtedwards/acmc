@@ -13,6 +13,19 @@ function contentDiv() {
     }
     ratio = ratio + 'n';
     $('article.show:nth-of-type(' + ratio + ')').after('<div class="content added"></div>');
+    
+    if($('.boxes.open-first article').length){
+
+        thisArticle = $('.boxes.open-first article').first();
+        
+        $(thisArticle).addClass('current');
+        
+        content = $(thisArticle).find('div.details').html();
+        box = $(thisArticle).nextAll('.content').first();
+        
+        $(box).addClass('open').html(content);
+        
+    }
 }
 
 function contentDiv_tier2() {
@@ -38,6 +51,7 @@ if($('.boxes article').length){
     setTimeout(contentDiv, 500);
 }
 
+
 if($('.boxes.tier_2 article').length){
     setTimeout(contentDiv_tier2, 500);
 }
@@ -62,6 +76,7 @@ $('.filters a').click(function(e){
   contentDiv();
   
   });
+
 
 
 

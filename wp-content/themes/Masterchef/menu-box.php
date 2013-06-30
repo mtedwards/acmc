@@ -8,7 +8,7 @@
 ?>
 <article class="<?php echo $filterClass; ?>">
   <?php // Initial displayed section ?>
-  <a href="#" data-cat="news" data-state="vic">  
+  <a href="#">  
     
     <?php
       $name = get_the_title();

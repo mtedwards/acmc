@@ -1,7 +1,7 @@
 <?php get_header(); the_post();?>
 
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns boxes" role="main">
+	<div class="small-12 large-8 columns boxes open-first" role="main">
 	 <?php $info_boxes = get_field('information_boxes');
 	   if($info_boxes) {
 	     foreach($info_boxes as $info_box) {

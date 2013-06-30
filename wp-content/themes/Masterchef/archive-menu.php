@@ -18,7 +18,7 @@
 	
 	// The Loop
 	if ( $the_query->have_posts() ) :?>
-		<div class="boxes">
+		<div class="boxes open-first">
   		<?php 
 	while ( $the_query->have_posts() ) : $the_query->the_post();
 	  get_template_part('menu-box');
