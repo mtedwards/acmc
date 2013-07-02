@@ -9,7 +9,7 @@
     		 <ul class="footer_logos"> 
     		  <?php foreach($logos as $logo) { ?>
     		    <li>
-    		      <a href="<?php echo $logo['logo_link']; ?>" target="_blank">
+    		      <a onClick="ga('send', 'event', 'partners', 'footer', '<?php echo $logo['partner_name']; ?>'" href="<?php echo $logo['logo_link']; ?>" target="_blank">
     		        <?php $logo_img = $logo['logo_image']; ?>
     		        <img src="<?php echo $logo_img['url']; ?>" alt="<?php echo $logo_img['alt']; ?>"/>
     		      </a>
@@ -21,6 +21,16 @@
 		  </ul>
 		</div>
   </div>
+  
+  <div class="row">
+  	<div class="small-12 large-12 columns follow">
+  	 <h3>Follow:</h3>
+  	 <a onClick="ga('send', 'event', 'follow', 'footer', 'facebook'"  class="facebook icon-facebook" href="https://www.facebook.com/MCDiningandBar" target="_blank"></a>
+  	 <a onClick="ga('send', 'event', 'follow', 'footer', 'twitter'"  class="twitter icon-twitter" href="https://twitter.com/MCDiningandBar" target="_blank"></a>
+  	 <a onClick="ga('send', 'event', 'follow', 'footer', 'instagram'"  class="instagram icon-instagram" href="http://instagram.com/MCDiningandBar" target="_blank"></a>
+  	</div>
+  </div>
+  
   <div class="row">
   	<div class="small-12 large-8 large-centered columns">
 		  <small><?php the_field('footer_text','options'); ?></small>
@@ -39,6 +49,7 @@
     js.src=p+"://platform.twitter.com/widgets.js";
     fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
   </script>
+
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
 </body>
 </html>

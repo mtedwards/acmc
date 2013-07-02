@@ -6,6 +6,12 @@
 
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" role="main">
+  	<div class="row">
+    	<div class="small-12 columns">
+    		<?php the_post(); the_content(); ?>
+    	</div> 
+    </div>
+
 	<?php
 	$args = array( 
 	    'post_type' => array(

@@ -5,13 +5,14 @@
   if($syd and ! $melb){$filterClass = 'sydney';}
   if($melb and ! $syd){$filterClass = 'melbourne';}
   if($melb and $syd){$filterClass = 'sydney melbourne';}
+  
+  $name = get_the_title(); // Initial displayed section
+  $dataTitle = sanitize($name);
 ?>
-<article class="<?php echo $filterClass; ?>">
-  <?php // Initial displayed section ?>
-  <a href="#" data-cat="news" data-state="vic">  
+<article class="<?php echo $filterClass; ?>" data-title="<?php echo $dataTitle; ?>">
+  <a onClick="ga('send', 'event', 'talent', 'open', '<?php echo $name; ?>');" href="#" name="<?php echo $dataTitle; ?>">  
     
     <?php
-      $name = get_the_title();
       $img = get_the_post_thumbnail(); 
       echo $img;  
     ?>
@@ -26,9 +27,9 @@
 		<div class="row">
 		  <div class="small-12 columns">
 				<h4><?php echo $name; ?></h4>
-				<?php get_template_part('includes/contact-buttons'); ?>
+				<?php include(locate_template('includes/contact-buttons.php'));  ?>
 				<?php the_excerpt(); ?>
-				<p><a href="<?php the_permalink(); ?>">Read More</a></p>
+				<p><a onClick="ga('send', 'event', 'talent', '<?php echo $name; ?>', 'read more');" href="<?php the_permalink(); ?>">Read More</a></p>
 		  </div>
 		</div>
   </div><?php // end popup section ?>

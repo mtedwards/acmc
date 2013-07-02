@@ -1,5 +1,11 @@
 // Define Functions
 
+           /*
+             $(this).addClass('current');
+           content = $(this).find('div.details').html();
+           $(this).nextAll('.content').first().addClass('open').html(content);
+*/  
+
 function contentDiv() {
     $('.added').remove();
     $('.boxes article').removeClass('current');
@@ -26,6 +32,22 @@ function contentDiv() {
         $(box).addClass('open').html(content);
         
     }
+    
+    if(window.location.hash) {
+      var hash = location.hash.replace('#', '');
+      
+      $('.open').removeClass('open').empty();
+      $('article').removeClass('current');
+      
+        thisArticle = $('.boxes article[data-title="' + hash +'"]');
+        
+        $(thisArticle).addClass('current');
+        
+        content = $(thisArticle).find('div.details').html();
+        box = $(thisArticle).nextAll('.content').first();
+        
+        $(box).addClass('open').html(content);      
+    }
 }
 
 function contentDiv_tier2() {
@@ -44,7 +66,9 @@ function contentDiv_tier2() {
     $('.tier_2 article.show:nth-of-type(' + ratio + ')').after('<div class="content added"></div>');
 }
 
-
+if($('.boxes.tier_2 article').length){
+    setTimeout(contentDiv_tier2, 300);
+}
 
 if($('.boxes article').length){
     $('.boxes article').addClass('show');
@@ -52,9 +76,7 @@ if($('.boxes article').length){
 }
 
 
-if($('.boxes.tier_2 article').length){
-    setTimeout(contentDiv_tier2, 500);
-}
+
 
 // filtering
 var articles = $('.boxes article');

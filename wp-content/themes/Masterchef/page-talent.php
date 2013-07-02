@@ -1,7 +1,18 @@
+<?php /*
+  Template Name: Talent Archve
+*/ ?>
+
 <?php get_header(); ?>
 
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" role="main">
+  	
+  	<div class="row">
+    	<div class="small-12 columns">
+    		<?php the_post(); the_content(); ?>
+    	</div> 
+    </div>
+
 
 	<div class="filters">
     <a onClick="ga('send', 'event', 'talent', 'filter', 'all');" href="#" class="active-filter" data-filter="all">ALL</a>

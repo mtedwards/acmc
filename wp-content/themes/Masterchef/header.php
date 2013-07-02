@@ -44,14 +44,14 @@
       <div class="row">
       	<div class="small-12 columns">
       	  <div class="header-image"  role="img">
-      		  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+      		  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php wp_title(); ?></a></h1>
       		</div>
       		<div class="call-to-action">
-      		  <a href="/sydney" class="button white-trans">Sydney <i>On Sale July 16</i></a>
-      		  <a href="/melbourne" class="button white-trans">Melbourne <i>On Sale July 16</i></a>
+      		  <a onClick="ga('send', 'event', 'book', 'header', 'Sydney');" href="/sydney" class="button white-trans">Sydney <i>On Sale July 16</i></a>
+      		  <a onClick="ga('send', 'event', 'book', 'header', 'Melbourne');" href="/melbourne" class="button white-trans">Melbourne <i>On Sale July 16</i></a>
       		 <!--
-        		 <a href="<?php the_field('syd_link','options') ?>" class="button white-trans" target="_blank">Book Sydney <i><?php the_field('syd_dates','options') ?></i></a>
-      		  <a href="<?php the_field('melb_link','options') ?>" class="button white-trans" target="_blank">Book Melbourne <i><?php the_field('melb_dates','options') ?></i></a>
+        		 <a onClick="ga('send', 'event', 'book', 'header', 'Sydney');" href="<?php the_field('syd_link','options') ?>" class="button white-trans" target="_blank">Book Sydney <i><?php the_field('syd_dates','options') ?></i></a>
+      		  <a onClick="ga('send', 'event', 'book', 'header', 'Melbourne');" href="<?php the_field('melb_link','options') ?>" class="button white-trans" target="_blank">Book Melbourne <i><?php the_field('melb_dates','options') ?></i></a>
       		  -->
       		</div>
         </div><?php //end columns ?>	

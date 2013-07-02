@@ -29,12 +29,12 @@
   				<div class="row">
   					<div class="large-6 columns">
   						<!-- <a href="<?php the_field('syd_link','options') ?>" class="button white" target="_blank">Book Sydney</a> -->
-  						<a href="/sydney" class="button white">Sydney On Sale July 16</a>
+  						<a onClick="ga('send', 'event', 'book', 'front-page', 'Sydney');" href="/sydney" class="button white">Sydney On Sale July 16</a>
       		  
   					</div>
   				  <div class="large-6 columns">
   						<!-- <a href="<?php the_field('melb_link','options') ?>" class="button white" target="_blank">Book Melbourne</a> -->
-  						<a href="/melbourne" class="button white">Melbourne On Sale July 16</a>
+  						<a onClick="ga('send', 'event', 'book', 'front-page', 'Melbourne');" href="/melbourne" class="button white">Melbourne On Sale July 16</a>
   					</div> 
   				</div>
   		  <hr>

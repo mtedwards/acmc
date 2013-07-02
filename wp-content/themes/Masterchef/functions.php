@@ -57,6 +57,25 @@ function reverie_entry_meta() {
 	echo '<p class="byline author">'. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p>';
 }
 
+
+/**
+ * Convert a string to the file/URL safe "slug" form
+ *
+ * @param string $string the string to clean
+ * @param bool $is_filename TRUE will allow additional filename characters
+ * @return string
+ */
+function sanitize($string = '', $is_filename = FALSE)
+{
+ // Replace all weird characters with dashes
+ $string = preg_replace('/[^\w\-'. ($is_filename ? '~_\.' : ''). ']+/u', '-', $string);
+
+ // Only allow one dash separator at a time (and make string lowercase)
+ return mb_strtolower(preg_replace('/--+/u', '-', $string), 'UTF-8');
+}
+
+
+
 // Custom Readmore link on Excerpt
 
 function new_excerpt_more( $excerpt ) {

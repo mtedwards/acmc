@@ -5,13 +5,15 @@
   if($syd and ! $melb){$filterClass = 'sydney';}
   if($melb and ! $syd){$filterClass = 'melbourne';}
   if($melb and $syd){$filterClass = 'sydney melbourne';}
+  
+  $name = get_the_title();
+  $dataTitle = sanitize($name);
 ?>
-<article class="<?php echo $filterClass; ?>">
-  <?php // Initial displayed section ?>
-  <a href="#">  
+<article class="<?php echo $filterClass; ?>" data-title="<?php echo $dataTitle; ?>">
+
+  <a onClick="ga('send', 'event', 'Food', 'open', '<?php echo $name; ?>');" href="#">  
     
     <?php
-      $name = get_the_title();
       $img = get_the_post_thumbnail(); 
       echo $img;  
     ?>

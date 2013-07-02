@@ -10,7 +10,7 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       	 <div class="row">
       	 	<div class="small-6 columns">
-      	 		<h2><?php the_title(); ?></h2>
+      	 		<h2><?php $name = get_the_title(); echo $name; ?></h2>
       	 	</div>
       	 	<div class="small-6 columns text-right">
       	 		<h4><a href="/talent"><span class="entypo-left-open-big"></span> Back to Talent</a></h4>
@@ -24,7 +24,7 @@
       	  </div>
       	  <div class="row">
       	  	<div class="small-12 columns">
-      	  		 <?php get_template_part('includes/contact-buttons'); ?>
+      	  		 <?php include(locate_template('includes/contact-buttons.php'));  ?>
       	  		 <?php the_content(); ?>
       	  	</div> 
       	  </div>
