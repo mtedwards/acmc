@@ -26,6 +26,7 @@
   <header class="mainhead" role="banner">
 	<div class="slider">
 		<?php $headerImages = get_field('header_images','options');
+		  shuffle($headerImages);
 		  $i = 0;
 			foreach($headerImages as $headerImage) {
 			 if($i == 0)  { ?>

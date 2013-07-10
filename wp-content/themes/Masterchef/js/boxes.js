@@ -56,24 +56,30 @@ function contentDiv_tier2() {
     var docWidth = +$('.boxes.tier_2').width();
     var articleWidth = +$('.boxes.tier_2 article').width();
 
-    var ratio = docWidth / articleWidth;
-    ratio = Math.floor(ratio);
-    if(ratio == 0) {
-      ratio = 1;
+    var ratio2 = docWidth / articleWidth;
+    ratio2 = Math.floor(ratio2);
+    if(ratio2 == 0) {
+      ratio2 = 1;
     }
-    ratio = ratio + 'n';
-    
-    $('.tier_2 article.show:nth-of-type(' + ratio + ')').after('<div class="content added"></div>');
+    ratio2 = ratio2 + 'n';
+
+    $('.tier_2 article.second:nth-of-type(' + ratio2 + ')').after('<div class="content added"></div>');
 }
 
-if($('.boxes.tier_2 article').length){
-    setTimeout(contentDiv_tier2, 300);
-}
+
+
 
 if($('.boxes article').length){
     $('.boxes article').addClass('show');
     setTimeout(contentDiv, 500);
 }
+
+if($('.boxes.tier_2 article').length){
+  $('.boxes.tier_2 article').removeClass('show').addClass('second');
+    setTimeout(contentDiv_tier2, 600);
+}
+
+
 
 
 
