@@ -119,7 +119,7 @@ function wlcmsUserCompare($needsToBe,$current)
     if($needsToBe == '0' || $needsToBe == '')
         return;
  
-    $roles = array( 'administrator' => 25 , 'editor' => 20, 'author' => 15, 'contributor' => 10, 'subscriber' => 5 );
+    $roles = array( 'administrator' => 25 , 'editor' => 20, 'super user' => 20, 'author' => 15, 'read only' => 15, 'contributor' => 10, 'subscriber' => 5 );
 
     $needsToBe = $roles[$needsToBe];
     $current = $roles[$current];

@@ -20,12 +20,9 @@
 -->
   
   <div class="widget tip-doubler">
-      <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_Header.png" alt="Tip-Doubler Header" />
-      <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_TextAbove.png" alt="Tip-Doubler Message" />  
-      <?php
-       // Get the Tip level from the OPTIONS and swap out image depending on level.
-       $tip = get_field('tip-doubler','options');
-      
+      <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_Header.png" alt="Tip-Doubler" />
+      <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_TextAbove.png" alt="Tip-Doubler" />
+      <?php $tip = get_field('tip-doubler','options');
         if($tip == 'closed') {?>
           <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_closed.png" alt="Tip-Doubler" />
         <?php } elseif($tip == 'zero') { ?>
@@ -51,7 +48,7 @@
         <?php } elseif($tip == 'fifty') { ?>
           <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_Syd50Mel0.png" alt="Tip-Doubler" />
         <?php } ?>
-      <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_TextBelow.png" alt="Tip-Doubler Footer" />
+      <img src="<?php bloginfo('template_url'); ?>/img/Tip-Doubler/MCD-TD_TextBelow.png" alt="Tip-Doubler" />
   </div>
   
 </aside><!-- /#sidebar -->

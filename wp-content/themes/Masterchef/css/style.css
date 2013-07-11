@@ -1876,14 +1876,14 @@ ul.footer_logos {
 #sidebar .twitter {
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc; }
-  @media (max-width: 800px) and (min-width: 449px) {
+  @media (max-width: 800px) and (min-width: 384px) {
     /* line 16, ../scss/_sidebar.scss */
     #sidebar .twitter {
       padding-right: 2%; } }
 /* line 25, ../scss/_sidebar.scss */
 #sidebar .widget {
   margin-bottom: 10px; }
-  @media (max-width: 800px) and (min-width: 449px) {
+  @media (max-width: 800px) and (min-width: 384px) {
     /* line 25, ../scss/_sidebar.scss */
     #sidebar .widget {
       width: 50%;

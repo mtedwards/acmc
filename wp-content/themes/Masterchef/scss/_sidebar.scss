@@ -17,20 +17,20 @@
     border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     
-    @media (max-width:800px) and (min-width:449px) {
+    @media (max-width:800px) and (min-width:384px) {
       padding-right: 2%;
     }  
   }
   
   .widget {
     margin-bottom: 0.5*$padding;
-    @media (max-width:800px) and (min-width:449px) {
+    @media (max-width:800px) and (min-width:384px) {
       width: 50%;
       float: left;
     }
     
     &.top {
- 
+
     }
   }
   
@@ -87,6 +87,4 @@
 
 .tip-doubler img {
   margin: 0;
-  padding: 0;
-}
-
+  padding: 0; }
