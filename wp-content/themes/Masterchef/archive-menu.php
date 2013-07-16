@@ -17,8 +17,8 @@
 	    'post_type' => array(
 	            'menus',
 	            ),                
-	    'order' => 'DESC',
-	    'orderby' => 'date',
+	    'order' => 'ASC',
+	    'orderby' => 'menu_order',
 	    );
 	$the_query = new WP_Query( $args );
 	

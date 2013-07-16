@@ -110,9 +110,9 @@ get_header(); the_post();?>
               	<div class="large-4 columns">
               		
               		<?php if( get_field('tue_booking_link') ) {
-              			echo '<a href="' . get_field('tue_booking_link') . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field('tue_booking_link') . '" class="button white">Book Now</a>';
               		} else {
-              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">Book Now</a>';
               		} ?>
               		<?php $notes = get_field('tue_announcements'); 
               			if($notes){
@@ -205,9 +205,9 @@ get_header(); the_post();?>
               	<div class="large-4 columns">
               		
               		<?php if( get_field('wed_booking_link') ) {
-              			echo '<a href="' . get_field('wed_booking_link') . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field('wed_booking_link') . '" class="button white">Book Now</a>';
               		} else {
-              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">Book Now</a>';
               		} ?>
               		<?php $notes = get_field('wed_announcements'); 
               			if($notes){
@@ -300,9 +300,9 @@ get_header(); the_post();?>
               	<div class="large-4 columns">
               		
               		<?php if( get_field('thur_booking_link') ) {
-              			echo '<a href="' . get_field('thur_booking_link') . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field('thur_booking_link') . '" class="button white">Book Now</a>';
               		} else {
-              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">Book Now</a>';
               		} ?>
               		<?php $notes = get_field('thurs_announcements'); 
               			if($notes){
@@ -395,9 +395,9 @@ get_header(); the_post();?>
               	<div class="large-4 columns">
               		
               		<?php if( get_field('fri_booking_link') ) {
-              			echo '<a href="' . get_field('fri_booking_link') . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field('fri_booking_link') . '" class="button white">Book Now</a>';
               		} else {
-              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">Book Now</a>';
               		} ?>
               		<?php $notes = get_field('fri_announcements'); 
               			if($notes){
@@ -489,9 +489,9 @@ get_header(); the_post();?>
               	</div>
               	<div class="large-4 columns">   		
               		<?php if( get_field('sat_booking_link') ) {
-              			echo '<a href="' . get_field('sat_booking_link') . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field('sat_booking_link') . '" class="button white">Book Now</a>';
               		} else {
-              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">Book Now</a>';
               		} ?>
               		<?php $notes = get_field('sat_announcements'); 
               			if($notes){
@@ -583,9 +583,9 @@ get_header(); the_post();?>
               	</div>
               	<div class="large-4 columns">   		
               		<?php if( get_field('sun_booking_link') ) {
-              			echo '<a href="' . get_field('sun_booking_link') . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field('sun_booking_link') . '" class="button white">Book Now</a>';
               		} else {
-              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">On Sale <i>July 16</i></a>';
+              			echo '<a href="' . get_field("melb_link","options") . '" class="button white">Book Now</a>';
               		} ?>
               		<?php $notes = get_field('sun_announcements'); 
               			if($notes){
