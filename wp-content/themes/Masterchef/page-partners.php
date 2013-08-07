@@ -63,7 +63,11 @@
               		  <div class="small-12  columns">
               				<h4><?php echo $mid['title']; ?></h4>
               				<?php echo $mid['content']; ?>
+              				<?php 
+              				  $mid_link =  $mid['link'];
+              				  if($mid_link){ ?>
               				<p><a onClick="ga('send', 'event', 'partners', 'Tier 2', '<?php echo $mid['title']; ?>'" href="<?php echo $mid['link']; ?>" target="_blank">Visit <?php echo $mid['title']; ?>'s Website</a></p>
+              				<?php } ?>
               		  </div>
               		</div>
                 </div><?php // end popup section ?>

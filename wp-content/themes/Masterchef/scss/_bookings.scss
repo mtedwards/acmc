@@ -105,7 +105,12 @@
 	  	  	padding: 0;
 	  	  	margin: 0.5*$padding 0;
 	  	  	color: $mcorange;
-	  	} 
+	  	}
+	 
+	 	h5 {
+  	color: #fff;
+	}
+	  
 	}
 	
 	.guide {
@@ -123,4 +128,22 @@
   	margin-right: 20px;
   	background: $mcorange;
 	}
+	
+}
+
+
+
+ul.talent-list {
+  list-style: none;
+  margin: 0;
+  li {
+    float: left;
+    padding-right: $padding;
+    a {
+      color: $mcorange;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }

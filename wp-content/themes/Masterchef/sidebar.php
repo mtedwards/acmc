@@ -5,7 +5,7 @@
       <a class="addthis_button_pinterest_share"></a>
       <a class="addthis_button_email"></a>
       <a class="addthis_button_twitter"></a>
-      <a onClick="alert('This')" class="addthis_button_facebook"></a>
+      <a class="addthis_button_facebook"></a>
 	</div>
 
   <div class="widget twitter">

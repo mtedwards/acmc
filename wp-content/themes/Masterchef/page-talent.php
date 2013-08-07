@@ -25,7 +25,7 @@
      'post_type' => array('talent'),      
      'posts_per_page' => 50,                
      'order' => 'ASC',
-     'orderby' => 'title',
+     'orderby' => 'menu_order',
      );
  
  $the_query = new WP_Query( $args );

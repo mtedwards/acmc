@@ -28,6 +28,22 @@
       	  		 <?php the_content(); ?>
       	  	</div> 
       	  </div>
+      	  <?php $appearances = get_field('appearing');
+      		  if($appearances){
+      		 ?>
+        		<div class="row">
+        			<div class="twelve columns">
+        			 <h5>Appearing:</h5>
+        	     <ul class="appearences">
+        	       <?php foreach($appearances as $appearance){ 
+          	       $link = $appearance['link_to'];
+        	       ?>
+        	         <li><a href="<?php bloginfo('url'); ?>/<?php echo $link; ?>"><?php echo $appearance['date']; ?> | <?php echo $appearance['note']; ?></a></li>
+        	       <?php } // end for each ?>
+        	     </ul>			
+        			</div> 
+        		</div>
+      		<?php } // end if $appearances ?>
       	</div>
       	<hr />
       </article>

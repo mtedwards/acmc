@@ -99,7 +99,7 @@
   } 
   
   .content.open {
-    max-height: 1500px;
+    max-height: 3000px;
     padding: $padding;
     margin-bottom: $padding;
     @include bp(med){
@@ -151,4 +151,19 @@
     margin-left: 4%;
   }
  
+}
+
+ul.appearences {
+  list-style: none;
+  margin: 0;
+  li {
+    float: left;
+    padding-right: $padding;
+    a {
+      color: $mcorange;
+      &:hover {
+        color: #222;
+      }
+    }
+  }
 }

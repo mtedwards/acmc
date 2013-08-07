@@ -40,9 +40,11 @@
   				$options = get_field('options');
   				foreach($options as $option){
     			 $visable = $option['sydney_option'];
-    			 if('$visable'){
-      			 echo $option['content_option'];
-    			 }	
+    			 if('$visable'){ ?>
+    			   <?php echo $option['opening_option']; ?>
+    			   <br>
+      			 <?php echo $option['content_option']; ?>
+      		<?php }	
   				}
 				?>
 		  </div>

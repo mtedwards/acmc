@@ -122,7 +122,28 @@ get_header(); the_post();?>
               			}
               		?>
               	</div>
-                            </div><?php // end row ?>
+              </div><?php // end row ?>
+              
+              <?php $talents = get_field('tuesday_talent');
+                if($talents){
+              ?>
+              <div class="row">
+              	<div class="twelve columns">
+              	 <h5>Talent:</h5>
+              		<ul class="talent-list">
+              		  <?php foreach($talents as $talent){ ?>
+              		    <li>
+              		      <?php $post_object =  $talent['talent']; 
+              		      ?>
+              		        <a href="<?php echo get_permalink($post_object->ID); ?>"><?php echo get_the_title($post_object->ID); ?></a>
+              		      | <?php  echo $talent['note']; ?>
+              		    </li>
+              		  <?php } //end for each ?>
+              		</ul>
+              	</div> 
+              </div>
+              <?php } // end if ?>
+              
               <div class="row">
                 
                 <?php 
@@ -218,6 +239,29 @@ get_header(); the_post();?>
               		?>
               	</div>
               </div><?php // end row ?>
+              
+              <?php $talents = get_field('wednesday_talent');
+                if($talents){
+              ?>
+              <div class="row">
+              	<div class="twelve columns">
+              	 <h5>Talent:</h5>
+              		<ul class="talent-list">
+              		  <?php foreach($talents as $talent){ ?>
+              		     <li>
+              		      <?php $post_object =  $talent['talent']; 
+              		      ?>
+              		        <a href="<?php echo get_permalink($post_object->ID); ?>"><?php echo get_the_title($post_object->ID); ?></a>
+              		      | <?php  echo $talent['note']; ?>
+              		    </li>
+
+              		  <?php } //end for each ?>
+              		</ul>
+              	</div> 
+              </div>
+              <?php } // end if ?>
+              
+              
               <div class="row">
                 
                 <?php 
@@ -312,7 +356,29 @@ get_header(); the_post();?>
               			}
               		?>
               	</div>
-                            </div><?php // end row ?>
+              </div><?php // end row ?>
+              
+             <?php $talents = get_field('thursday_talent');
+                if($talents){
+              ?>
+              <div class="row">
+              	<div class="twelve columns">
+              	 <h5>Talent:</h5>
+              		<ul class="talent-list">
+              		  <?php foreach($talents as $talent){ ?>
+              		     <li>
+              		      <?php $post_object =  $talent['talent']; 
+              		      ?>
+              		        <a href="<?php echo get_permalink($post_object->ID); ?>"><?php echo get_the_title($post_object->ID); ?></a>
+              		      | <?php  echo $talent['note']; ?>
+              		    </li>
+
+              		  <?php } //end for each ?>
+              		</ul>
+              	</div> 
+              </div>
+              <?php } // end if ?>
+              
               <div class="row">
                 
                 <?php 
@@ -407,7 +473,29 @@ get_header(); the_post();?>
               			}
               		?>
               	</div>
-                           </div><?php // end row ?>
+              </div><?php // end row ?>
+              
+              <?php $talents = get_field('friday_talent');
+                if($talents){
+              ?>
+              <div class="row">
+              	<div class="twelve columns">
+              	 <h5>Talent:</h5>
+              		<ul class="talent-list">
+              		  <?php foreach($talents as $talent){ ?>
+              		     <li>
+              		      <?php $post_object =  $talent['talent']; 
+              		      ?>
+              		        <a href="<?php echo get_permalink($post_object->ID); ?>"><?php echo get_the_title($post_object->ID); ?></a>
+              		      | <?php  echo $talent['note']; ?>
+              		    </li>
+
+              		  <?php } //end for each ?>
+              		</ul>
+              	</div> 
+              </div>
+              <?php } // end if ?>
+              
               <div class="row">
                 
                 <?php 
@@ -501,7 +589,29 @@ get_header(); the_post();?>
               			}
               		?>
               	</div>
-                            </div><?php // end row ?>
+              </div><?php // end row ?>
+              
+             <?php $talents = get_field('saturday_talent');
+                if($talents){
+              ?>
+              <div class="row">
+              	<div class="twelve columns">
+              	 <h5>Talent:</h5>
+              		<ul class="talent-list">
+              		  <?php foreach($talents as $talent){ ?>
+              		     <li>
+              		      <?php $post_object =  $talent['talent']; 
+              		      ?>
+              		        <a href="<?php echo get_permalink($post_object->ID); ?>"><?php echo get_the_title($post_object->ID); ?></a>
+              		      | <?php  echo $talent['note']; ?>
+              		    </li>
+              		  <?php } //end for each ?>
+              		</ul>
+              	</div> 
+              </div>
+              <?php } // end if ?>
+              
+              
               <div class="row">
                 
                 <?php 
@@ -595,7 +705,29 @@ get_header(); the_post();?>
               			}
               		?>
               	</div>
-                            </div><?php // end row ?>
+              </div><?php // end row ?>
+              
+              <?php $talents = get_field('sunday_talent');
+                if($talents){
+              ?>
+              <div class="row">
+              	<div class="twelve columns">
+              	 <h5>Talent:</h5>
+              		<ul class="talent-list">
+              		  <?php foreach($talents as $talent){ ?>
+              		    <li>
+              		      <?php $post_object =  $talent['talent']; 
+              		      ?>
+              		        <a href="<?php echo get_permalink($post_object->ID); ?>"><?php echo get_the_title($post_object->ID); ?></a>
+              		      | <?php  echo $talent['note']; ?>
+              		    </li>
+
+              		  <?php } //end for each ?>
+              		</ul>
+              	</div> 
+              </div>
+              <?php } // end if ?>
+              
               <div class="row">
                 
                 <?php 
@@ -668,7 +800,11 @@ get_header(); the_post();?>
 					<p><b class="date-guide"></b>Dates in orange are sold out.</p>
 				</div> 
 			</div>
-
+			<div class="row bookings-text">
+				<div class="small-12 columns">
+					<?php the_field('below_bookings'); ?>
+				</div> 
+			</div>
 	
 	</div>
 	<?php get_sidebar(); ?>
