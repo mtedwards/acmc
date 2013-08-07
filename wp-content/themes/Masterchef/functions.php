@@ -20,7 +20,7 @@ function reverie_theme_support() {
 	add_theme_support('automatic-feed-links');
 	
 	// Add post formarts supports. http://codex.wordpress.org/Post_Formats
-	add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+	add_theme_support('post-formats', array('gallery', 'video'));
 	
 	// Add menu supports. http://codex.wordpress.org/Function_Reference/register_nav_menus
 	add_theme_support('menus');

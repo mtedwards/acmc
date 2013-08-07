@@ -106,7 +106,7 @@ class acf_field_select extends acf_field
 		// null
 		if( $field['allow_null'] )
 		{
-			echo '<option value="null"> - Select - </option>';
+			echo '<option value="null">- ' . __("Select",'acf') . ' -</option>';
 		}
 		
 		// loop through values and add them as options
@@ -330,9 +330,9 @@ class acf_field_select extends acf_field
 			// key => value
 			foreach($field['choices'] as $choice)
 			{
-				if(strpos($choice, ':') !== false)
+				if(strpos($choice, ' : ') !== false)
 				{
-					$choice = explode(':', $choice);
+					$choice = explode(' : ', $choice);
 					$new_choices[ trim($choice[0]) ] = trim($choice[1]);
 				}
 				else
