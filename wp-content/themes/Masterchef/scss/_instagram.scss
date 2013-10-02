@@ -32,9 +32,9 @@
       i.user {
         font-style: normal;
         float: right;
-        font-size: 0.8em;
+        font-size: 0.6em;
         line-height: 1.5em;
-            @media screen and (max-width:460px){
+            @media screen and (max-width:480px){
               display: none;
             }
       }

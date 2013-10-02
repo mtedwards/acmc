@@ -1,0 +1,90 @@
+#sidebar {
+  h2 {
+    background: #222;
+    color: white;
+    padding: 0.5*$padding 10px;
+    margin: 0;
+    font-size: 1rem;
+    @media screen and (min-width: 910px){
+      padding: 0.5*$padding 10px;
+      font-size: 1.3rem;
+    }
+    font-weight: 100;
+    position: relative;
+  }
+  
+  .twitter {
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+    @media (max-width:800px) and (min-width:384px) {
+      padding-right: 2%;
+    }  
+  }
+  
+  .widget {
+    margin-bottom: 0.5*$padding;
+    @media (max-width:800px) and (min-width:384px) {
+      width: 50%;
+      float: left;
+    }
+    
+    &.top {
+
+    }
+  }
+  
+  .share {
+    .at16nc, .ishareactive-sm {
+      background: none;
+    }
+    
+    h3 {
+      display: inline-block;
+      line-height: 32px;
+      height: 32px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    a {
+      float: right;
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+      position: relative;
+      color: $primary-color;
+      margin-right: 5px;
+      &:hover { color: $mcgrey;}
+      &:before {
+        font-family: 'mcdicon', sans-serif;
+        color: $primary-color;;
+        position: absolute;
+        font-size: 1.5em;
+        left:5px;
+       } 
+        // Different Icons
+        &.addthis_button_facebook:before {
+            content:'\&';
+            left:10px;
+          }
+        &.addthis_button_twitter:before {
+            content:'\%';
+          }
+        &.addthis_button_email:before {
+            content:'\"';
+          }
+        &.addthis_button_pinterest_share:before {
+            content:'\'';
+          }
+        &.addthis_button_compact:before {
+            content:'\(';
+          }
+        
+    }
+  }
+}
+
+.tip-doubler img {
+  margin: 0;
+  padding: 0; }

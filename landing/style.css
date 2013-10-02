@@ -1,0 +1,44 @@
+html, body {
+	margin:0; padding:0;
+	height:100%;
+}
+ 
+body {
+	background:url('images/background.jpg'); background-repeat:repeat;
+	font-family:Georgia, Times, serifs; overflow:hidden;
+}
+ 
+#floater {
+	position:relative; float:left;
+	height:50%;	margin-bottom:-250px;
+	width:1px;
+}
+ 
+#centered {
+	position:relative; clear:left;
+	height:500px; width:100%; width:500px;
+	margin:0 auto; margin-top:-20px;
+		
+}
+ 
+#bottom {
+	position:absolute; background-color:#212121; padding:20px 20px 17px 20px;
+	bottom:0; text-align:center; width:100%; margin-left:-23px;
+}
+ 
+#content {
+	position:absolute; width:500px; text-align:center; top:0; bottom:0;
+	overflow:none; height:500px; margin-top:-75px;
+}
+
+#logo {margin-bottom:27px;}
+#tagline {margin-bottom:24px;}
+#fb {margin-left:157px; margin-right:22px;height:47px; width:47px; background-image:url(images/facebook.gif); background-position:top;}
+#twitter {margin-right:16px; height:45px; width:52px;background-image:url(images/twitter.gif); background-position:top;}
+#instagram {height:47px; width:46px;background-image:url(images/instagram.gif); background-position:top;}
+
+#fb:hover {background-position:bottom;}
+#twitter:hover {background-position:bottom;}
+#instagram:hover {background-position:bottom;}
+.social-icon {display:block; float:left;}
+.footer-partner {margin-right:20px;}

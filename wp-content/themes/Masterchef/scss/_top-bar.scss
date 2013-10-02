@@ -51,7 +51,7 @@ $topbar-menu-icon-color-toggled:       #888 !default;
 
 // Transitions and breakpoint styles
 $topbar-transition-speed:              300ms !default;
-$topbar-breakpoint:                    emCalc(760px) !default; // Change to 9999px for always mobile layout
+$topbar-breakpoint:                    emCalc(800px) !default; // Change to 9999px for always mobile layout
 $topbar-media-query:                   "only screen and (min-width: #{$topbar-breakpoint})" !default;
 
 // Divider Styles
@@ -398,14 +398,13 @@ $topbar-sticky-class:                  ".sticky" !default;
       ul {
         width: 100%;
         font-size: 1em;
-        @media only screen and (min-width: 885px) { font-size: emCalc(20px); }
+        @media only screen and (min-width: 910px) { font-size: emCalc(20px); }
         height: auto !important;
         display: block;
         text-align: center;
 
         li {
           float: left;
-          width: 16.66%;
           position: relative;
         &.active {
          a {

@@ -7,7 +7,6 @@ get_header(); the_post();?>
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns bookings" role="main">
 	 	<div class="filter-link">
-		   <a href="<?php bloginfo('url'); ?>/sydney">SYDNEY</a>
 		   <a class="active-filter" href="<?php bloginfo('url'); ?>/melbourne">MELBOURNE</a>
 	 	</div>
 		
@@ -27,7 +26,7 @@ get_header(); the_post();?>
 		
 		<?php 
 			//define NOW
-			$now = date('Ymd') ."\n";
+			$now = date('Ymd');
 			//$now = '20130820';
 			
 			$args = array( 
@@ -89,7 +88,7 @@ get_header(); the_post();?>
 				<article class="single-day"> <?php // Tuesday ?>
 		 			<?php if(get_field('tue_sold_out')) { ?>
 		 				<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $tuesday_analytics_date; ?>');" class="sold" href="#"><?php echo $tuesday_day; ?></a>
-		 			<?php } elseif($tuesday < $now) { ?>
+		 			<?php } elseif($tuesday < $now || get_field('tue_closed') == '1' ) { ?>
 		 			  <a class="closed" href="#"><?php echo $tuesday_day; ?></a>
 		 			<?php } else { ?>
 				    	<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $tuesday_analytics_date; ?>');" href="#"><?php echo $tuesday_day; ?></a>
@@ -205,7 +204,7 @@ get_header(); the_post();?>
 				 <article class="single-day"> <?php // Wednesday ?>
 		 			<?php if(get_field('wed_sold_out')) { ?>
 		 				<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $wednesday_analytics_date; ?>');" class="sold" href="#"><?php echo $wednesday_day; ?></a>
-		 			<?php } elseif($wednesday < $now) { ?>
+		 			<?php } elseif($wednesday < $now || get_field('wed_closed') == '1' ) { ?>
 		 			  <a class="closed" href="#"><?php echo $wednesday_day; ?></a>
 		 			<?php } else { ?>
 				    	<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $wednesday_analytics_date; ?>');" href="#"><?php echo $wednesday_day; ?></a>
@@ -323,7 +322,7 @@ get_header(); the_post();?>
 				 <article class="single-day"> <?php // Thursday ?>
 		 			<?php if(get_field('thur_sold_out')) { ?>
 		 				<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $thursday_analytics_date; ?>');" class="sold" href="#"><?php echo $thursday_day; ?></a>
-		 			<?php } elseif($thursday < $now) { ?>
+		 			<?php } elseif($thursday < $now || get_field('thur_closed') == '1' ) { ?>
 		 			  <a class="closed" href="#"><?php echo $thursday_day; ?></a>
 		 			<?php } else { ?>
 				    	<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $thursday_analytics_date; ?>');" href="#"><?php echo $thursday_day; ?></a>
@@ -440,7 +439,7 @@ get_header(); the_post();?>
 				 <article class="single-day"> <?php // Friday ?>
 		 			<?php if(get_field('fri_sold_out')) { ?>
 		 				<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $friday_analytics_date; ?>');" class="sold" href="#"><?php echo $friday_day; ?></a>
-		 			<?php } elseif($friday < $now) { ?>
+		 			<?php } elseif($friday < $now || get_field('fri_closed') == '1' ) { ?>
 		 			  <a class="closed" href="#"><?php echo $friday_day; ?></a>
 		 			<?php } else { ?>
 				    	<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $friday_analytics_date; ?>');" href="#"><?php echo $friday_day; ?></a>
@@ -557,7 +556,7 @@ get_header(); the_post();?>
 				 <article class="single-day"> <?php // Saturday ?>
 		 			<?php if(get_field('sat_sold_out')) { ?>
 		 				<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $saturday_analytics_date; ?>');" class="sold" href="#"><?php echo $saturday_day; ?></a>
-		 			<?php } elseif($saturday < $now) { ?>
+		 			<?php } elseif($saturday < $now || get_field('sat_closed') == '1' ) { ?>
 		 			  <a class="closed" href="#"><?php echo $saturday_day; ?></a>
 		 			<?php } else { ?>
 				    	<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $saturday_analytics_date; ?>');" href="#"><?php echo $saturday_day; ?></a>
@@ -673,7 +672,7 @@ get_header(); the_post();?>
 				 <article class="single-day"> <?php // Sunday ?>
 		 			<?php if(get_field('sun_sold_out')) { ?>
 		 				<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $sunday_analytics_date; ?>');" class="sold" href="#"><?php echo $sunday_day; ?></a>
-		 			<?php } elseif($sunday < $now) { ?>
+		 			<?php } elseif($sunday < $now || get_field('sun_closed') == '1' ) { ?>
 		 			  <a class="closed" href="#"><?php echo $sunday_day; ?></a>
 		 			<?php } else { ?>
 				    	<a onClick="ga('send', 'event', 'booking-date', 'open', '<?php echo $sunday_analytics_date; ?>');" href="#"><?php echo $sunday_day; ?></a>

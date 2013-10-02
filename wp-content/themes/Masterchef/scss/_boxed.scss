@@ -57,3 +57,10 @@
     right: 6px;
   }
 }
+
+.news-box {
+  article .small-details {
+      b {font-size: 0.9em;}
+      min-height: 60px;
+  }
+}

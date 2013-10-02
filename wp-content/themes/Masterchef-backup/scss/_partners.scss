@@ -1,0 +1,142 @@
+.partners {
+  
+  article {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 $padding;
+  }
+  
+  .tier_1  article {
+      @media only screen and (min-width: 450px) {
+        width: 48%;
+        margin-right: 2%;
+      }
+    }
+  
+  .tier_2 article {
+  
+    .small-details {
+      padding: 0.4*$padding 0.5*$padding;
+      height:50px;
+      b {
+        margin: 0; padding:0;
+        color: $primary-color; 
+        font-family: $heading-text;
+        font-size: 0.8em;
+      }
+    }
+    
+    width: 100%;
+        
+      @media only screen and (min-width: 450px) {
+        width: 30%;
+        margin-right: 2%;
+      }
+    }
+    
+  .tier_3 a {
+    display: block;
+    width: 23.5%;
+    margin-right: 1.5%;
+    margin-bottom: 10px;
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  
+  article a {
+    display: block;
+    padding: 0;
+    background: #fff;
+    text-decoration: none;
+  }
+  
+  article img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  article .small-details {
+    padding: 0.7*$padding 0.5*$padding;
+    b {
+      margin: 0; padding:0;
+      color: $primary-color; 
+      font-family: $heading-text;
+    }
+    position:relative;
+    &:after {
+      font-family: 'mcdicon', sans-serif;
+      content:'\!';
+      color: $primary-color;
+      position: absolute;
+      right: 12px;
+      top: 0.5*$padding;
+      font-size: 1.5em;
+      @include transition-duration(0.3s);
+    } 
+  } 
+  
+  article a:hover .small-details:after {
+    right: 6px;
+  }
+  
+  article.current {
+    margin-bottom: 0;
+    border-bottom: $padding solid #fff;
+    .small-details:after {
+      font-family: 'mcdicon', sans-serif;
+      content: '\#';
+      right:12px;
+      color: $mcgrey;
+    }
+  }
+  
+  article.current a:hover .small-details:after {
+    right: 12px;
+    color: $primary-color;
+  }
+  
+  article div.details { 
+    display: none;
+  }
+  
+  .content {
+    clear: both;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    @include transition-duration(0.5s);
+    img, h4 {
+      display: none;
+      @include bp(med){
+        display: block;
+        }
+    }
+  } 
+  
+  .content.open {
+    max-height: 1000px;
+    padding: $padding;
+    @include bp(med){
+      margin: 0 2% 0.5*$padding 0;
+    }
+    @include bp(big){
+      margin: 0 2% 0.5*$padding 0;
+    }
+    opacity: 1;
+  }
+}

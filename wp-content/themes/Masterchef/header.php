@@ -26,7 +26,7 @@
   <header class="mainhead" role="banner">
 	<div class="slider">
 		<?php $headerImages = get_field('header_images','options');
-		  shuffle($headerImages);
+		  //shuffle($headerImages);
 		  $i = 0;
 			foreach($headerImages as $headerImage) {
 			 if($i == 0)  { ?>
@@ -48,7 +48,6 @@
       		  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php wp_title(); ?></a></h1>
       		</div>
       		<div class="call-to-action">
-        		 <a onClick="ga('send', 'event', 'book', 'header', 'Sydney');" href="<?php the_field('syd_link','options') ?>" class="button white-trans" target="_blank">Book Sydney <i><?php the_field('syd_dates','options') ?></i></a>
       		  <a onClick="ga('send', 'event', 'book', 'header', 'Melbourne');" href="<?php the_field('melb_link','options') ?>" class="button white-trans" target="_blank">Book Melbourne <i><?php the_field('melb_dates','options') ?></i></a>
       		</div>
         </div><?php //end columns ?>	

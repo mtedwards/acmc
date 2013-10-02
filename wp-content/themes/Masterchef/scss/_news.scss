@@ -1,0 +1,103 @@
+.category-news .news-list{
+  background: white;
+  .module {
+    border-top: 2px solid #eee;
+    @include clearfix;
+    position: relative;
+    &:first-of-type {
+      border-top:none;
+    }
+    
+    header {
+      h2, p {
+        margin: 0;
+      }
+      margin-bottom:0.5em;
+    }
+    
+    
+    &.has-image {
+      padding-left: 35%;
+          
+      a.image-link {
+        position: absolute;
+        top:20px;
+        left:20px;
+        width: 30%;
+        padding-bottom: 0;
+      }
+      
+      a.image-link img {
+        width:100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
+      
+      &.video {
+        a.image-link:after {
+          font-family: 'mcdicon';
+          content:"\2e";
+          color:white;
+          text-align:center;
+          line-height:50px;
+          font-size:3em;
+          position:absolute;
+          height:50px;
+          width:50px;
+          background:rgba(0,0,0,0.2);
+          display:block;
+          top:50%;
+          left:50%;
+          margin:-25px;
+        }
+        
+        a.image-link:hover:after {
+          background:rgba(0,0,0,0.8);
+          transition: all 0.5s;
+          color:$mcorange;
+        }
+      }
+      
+        @media screen and (max-width:1000px){
+          padding-left:20px;
+            a.image-link {
+              position:relative;
+              display: inline-block;
+              top:auto;
+              right:auto;
+              bottom:auto;
+              left:auto;
+              float: left;
+              margin: 0 1em 1em 0;
+            }
+        }
+        
+        @media screen and (max-width:650px){
+            a.image-link {
+              width: 100%;
+              float: none;
+              margin: 0 0 1em 0;
+            }
+          }    
+    }
+  }
+}
+
+.pagination-centered {
+  margin-top: 1em;
+  li a, li .current{
+    padding: 3px 6px;
+    background: #000;
+    color: white;
+    &.next, &.prev {
+      color:black;
+      background: none;
+    } 
+  }
+  li .current, li a:hover {
+    background: #fff;
+    color:#000;
+  }
+}
+

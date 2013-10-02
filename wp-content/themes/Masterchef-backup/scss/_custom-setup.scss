@@ -1,0 +1,59 @@
+.alignright {
+	float: right;
+	margin: 0 0 $padding $padding;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 $padding $padding 0;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-justify {
+  text-align: justify !important; }
+
+.hide {
+  display: none; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased; 
+  }
+
+
+img {
+  display: inline-block;
+  vertical-align: middle; 
+  padding-bottom: $padding;
+  
+  }
+
+
+textarea {
+  height: auto;
+  min-height: 50px; }
+
+select {
+  width: 100%; }
+  
+body {
+ background: $body-bg;
+}

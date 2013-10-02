@@ -15,6 +15,7 @@ function reverie_theme_support() {
 	// Add post thumbnail supports. http://codex.wordpress.org/Post_Thumbnails
 	add_theme_support('post-thumbnails');
 	// set_post_thumbnail_size(150, 150, false);
+	 add_image_size( 'news-thumb', 576, 432, true ); //(cropped)
 	
 	// rss thingy
 	add_theme_support('automatic-feed-links');
@@ -53,8 +54,7 @@ foreach ($sidebars as $sidebar) {
 
 // return entry meta information for posts, used by multiple loops.
 function reverie_entry_meta() {
-	echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. sprintf(__('Posted on %s at %s.', 'reverie'), get_the_time('l, F jS, Y'), get_the_time()) .'</time>';
-	echo '<p class="byline author">'. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p>';
+	echo '<p class="byline author"><time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. sprintf(__('Posted on %s.', 'reverie'), get_the_time('l, F jS, Y')) .'</time></p>';
 }
 
 
@@ -373,6 +373,14 @@ if(function_exists("register_field_group"))
 				'type' => 'true_false',
 			),
 			array (
+				'default_value' => 0,
+				'message' => '',
+				'key' => 'field_51c8de6123456',
+				'label' => 'Closed',
+				'name' => 'tue_closed',
+				'type' => 'true_false',
+			),
+			array (
 				'toolbar' => 'basic',
 				'media_upload' => 'no',
 				'default_value' => '',
@@ -410,42 +418,6 @@ if(function_exists("register_field_group"))
 				'layout' => 'row',
 				'button_label' => 'Add Announcement',
 			),
-						array (
-				'key' => 'field_51f713d73ed96',
-				'label' => 'Tuesday Talent',
-				'name' => 'tuesday_talent',
-				'type' => 'repeater',
-				'sub_fields' => array (
-					array (
-						'key' => 'field_51f713ef3ed97',
-						'label' => 'Talent',
-						'name' => 'talent',
-						'type' => 'post_object',
-						'column_width' => '',
-						'post_type' => array (
-							0 => 'talent',
-						),
-						'taxonomy' => array (
-							0 => 'all',
-						),
-						'allow_null' => 0,
-						'multiple' => 0,
-					),
-					array (
-						'key' => 'field_51f714343ed98',
-						'label' => 'Note',
-						'name' => 'note',
-						'type' => 'text',
-						'column_width' => '',
-						'default_value' => '',
-						'formatting' => 'html',
-					),
-				),
-				'row_min' => 0,
-				'row_limit' => '',
-				'layout' => 'row',
-				'button_label' => 'Add Talent',
-			),
 			array (
 				'key' => 'field_51c8dfbed1739',
 				'label' => 'WED',
@@ -465,6 +437,14 @@ if(function_exists("register_field_group"))
 				'key' => 'field_51c8e03ed173e',
 				'label' => 'Sold Out',
 				'name' => 'wed_sold_out',
+				'type' => 'true_false',
+			),
+			array (
+				'default_value' => 0,
+				'message' => '',
+				'key' => 'field_51c8e03134567',
+				'label' => 'Closed',
+				'name' => 'wed_closed',
 				'type' => 'true_false',
 			),
 			array (
@@ -506,42 +486,6 @@ if(function_exists("register_field_group"))
 				'button_label' => 'Add Announcement',
 			),
 			array (
-				'key' => 'field_51f714f2ac903',
-				'label' => 'Wednesday Talent',
-				'name' => 'wednesday_talent',
-				'type' => 'repeater',
-				'sub_fields' => array (
-					array (
-						'key' => 'field_51f714f2ac904',
-						'label' => 'Talent',
-						'name' => 'talent',
-						'type' => 'post_object',
-						'column_width' => '',
-						'post_type' => array (
-							0 => 'talent',
-						),
-						'taxonomy' => array (
-							0 => 'all',
-						),
-						'allow_null' => 0,
-						'multiple' => 0,
-					),
-					array (
-						'key' => 'field_51f714f2ac905',
-						'label' => 'Note',
-						'name' => 'note',
-						'type' => 'text',
-						'column_width' => '',
-						'default_value' => '',
-						'formatting' => 'html',
-					),
-				),
-				'row_min' => 0,
-				'row_limit' => '',
-				'layout' => 'row',
-				'button_label' => 'Add Talent',
-			),
-			array (
 				'key' => 'field_51c8dfbed1738',
 				'label' => 'THUR',
 				'name' => '',
@@ -560,6 +504,14 @@ if(function_exists("register_field_group"))
 				'key' => 'field_51c8e03dd173d',
 				'label' => 'Sold Out',
 				'name' => 'thur_sold_out',
+				'type' => 'true_false',
+			),
+			array (
+				'default_value' => 0,
+				'message' => '',
+				'key' => 'field_51c8e03145678',
+				'label' => 'Closed',
+				'name' => 'thur_closed',
 				'type' => 'true_false',
 			),
 			array (
@@ -601,42 +553,6 @@ if(function_exists("register_field_group"))
 				'button_label' => 'Add Announcement',
 			),
 			array (
-				'key' => 'field_51f71509ac906',
-				'label' => 'Thursday Talent',
-				'name' => 'thursday_talent',
-				'type' => 'repeater',
-				'sub_fields' => array (
-					array (
-						'key' => 'field_51f71509ac907',
-						'label' => 'Talent',
-						'name' => 'talent',
-						'type' => 'post_object',
-						'column_width' => '',
-						'post_type' => array (
-							0 => 'talent',
-						),
-						'taxonomy' => array (
-							0 => 'all',
-						),
-						'allow_null' => 0,
-						'multiple' => 0,
-					),
-					array (
-						'key' => 'field_51f71509ac908',
-						'label' => 'Note',
-						'name' => 'note',
-						'type' => 'text',
-						'column_width' => '',
-						'default_value' => '',
-						'formatting' => 'html',
-					),
-				),
-				'row_min' => 0,
-				'row_limit' => '',
-				'layout' => 'row',
-				'button_label' => 'Add Talent',
-			),
-			array (
 				'key' => 'field_51c8dfbdd1737',
 				'label' => 'FRI',
 				'name' => '',
@@ -655,6 +571,14 @@ if(function_exists("register_field_group"))
 				'key' => 'field_51c8e03dd173c',
 				'label' => 'Sold Out',
 				'name' => 'fri_sold_out',
+				'type' => 'true_false',
+			),
+			array (
+				'default_value' => 0,
+				'message' => '',
+				'key' => 'field_51c8e0312568',
+				'label' => 'Closed',
+				'name' => 'fri_closed',
 				'type' => 'true_false',
 			),
 			array (
@@ -696,42 +620,6 @@ if(function_exists("register_field_group"))
 				'button_label' => 'Add Announcement',
 			),
 			array (
-				'key' => 'field_51f7152aac90a',
-				'label' => 'Friday Talent',
-				'name' => 'friday_talent',
-				'type' => 'repeater',
-				'sub_fields' => array (
-					array (
-						'key' => 'field_51f7152aac90b',
-						'label' => 'Talent',
-						'name' => 'talent',
-						'type' => 'post_object',
-						'column_width' => '',
-						'post_type' => array (
-							0 => 'talent',
-						),
-						'taxonomy' => array (
-							0 => 'all',
-						),
-						'allow_null' => 0,
-						'multiple' => 0,
-					),
-					array (
-						'key' => 'field_51f7152aac90c',
-						'label' => 'Note',
-						'name' => 'note',
-						'type' => 'text',
-						'column_width' => '',
-						'default_value' => '',
-						'formatting' => 'html',
-					),
-				),
-				'row_min' => 0,
-				'row_limit' => '',
-				'layout' => 'row',
-				'button_label' => 'Add Talent',
-			),
-			array (
 				'key' => 'field_51c8dfbcd1736',
 				'label' => 'SAT',
 				'name' => '',
@@ -750,6 +638,14 @@ if(function_exists("register_field_group"))
 				'key' => 'field_51c8e03cd173b',
 				'label' => 'Sold Out',
 				'name' => 'sat_sold_out',
+				'type' => 'true_false',
+			),
+			array (
+				'default_value' => 0,
+				'message' => '',
+				'key' => 'field_51c8e016587',
+				'label' => 'Closed',
+				'name' => 'sat_closed',
 				'type' => 'true_false',
 			),
 			array (
@@ -791,42 +687,6 @@ if(function_exists("register_field_group"))
 				'button_label' => 'Add Announcement',
 			),
 			array (
-				'key' => 'field_51f71540ac90d',
-				'label' => 'Saturday Talent',
-				'name' => 'saturday_talent',
-				'type' => 'repeater',
-				'sub_fields' => array (
-					array (
-						'key' => 'field_51f71540ac90e',
-						'label' => 'Talent',
-						'name' => 'talent',
-						'type' => 'post_object',
-						'column_width' => '',
-						'post_type' => array (
-							0 => 'talent',
-						),
-						'taxonomy' => array (
-							0 => 'all',
-						),
-						'allow_null' => 0,
-						'multiple' => 0,
-					),
-					array (
-						'key' => 'field_51f71540ac90f',
-						'label' => 'Note',
-						'name' => 'note',
-						'type' => 'text',
-						'column_width' => '',
-						'default_value' => '',
-						'formatting' => 'html',
-					),
-				),
-				'row_min' => 0,
-				'row_limit' => '',
-				'layout' => 'row',
-				'button_label' => 'Add Talent',
-			),
-			array (
 				'key' => 'field_51c8dfbcd1735',
 				'label' => 'SUN',
 				'name' => '',
@@ -845,6 +705,14 @@ if(function_exists("register_field_group"))
 				'key' => 'field_51c8e03cd173a',
 				'label' => 'Sold Out',
 				'name' => 'sun_sold_out',
+				'type' => 'true_false',
+			),
+			array (
+				'default_value' => 0,
+				'message' => '',
+				'key' => 'field_51c8e0123468',
+				'label' => 'Closed',
+				'name' => 'sun_closed',
 				'type' => 'true_false',
 			),
 			array (
@@ -884,42 +752,6 @@ if(function_exists("register_field_group"))
 				'row_limit' => '',
 				'layout' => 'row',
 				'button_label' => 'Add Announcement',
-			),
-			array (
-				'key' => 'field_51f71557ac911',
-				'label' => 'Sunday Talent',
-				'name' => 'sunday_talent',
-				'type' => 'repeater',
-				'sub_fields' => array (
-					array (
-						'key' => 'field_51f71557ac912',
-						'label' => 'Talent',
-						'name' => 'talent',
-						'type' => 'post_object',
-						'column_width' => '',
-						'post_type' => array (
-							0 => 'talent',
-						),
-						'taxonomy' => array (
-							0 => 'all',
-						),
-						'allow_null' => 0,
-						'multiple' => 0,
-					),
-					array (
-						'key' => 'field_51f71557ac913',
-						'label' => 'Note',
-						'name' => 'note',
-						'type' => 'text',
-						'column_width' => '',
-						'default_value' => '',
-						'formatting' => 'html',
-					),
-				),
-				'row_min' => 0,
-				'row_limit' => '',
-				'layout' => 'row',
-				'button_label' => 'Add Talent',
 			),
 		),
 		'location' => array (

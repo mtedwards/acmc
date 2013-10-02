@@ -9,7 +9,7 @@
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header>
-					<h2>Instagram Feed #mcdb</h2>
+					<h2>Instagram Feed <a href="http://instagram.com/MCDiningandBar" target="_blank">#mcdb</a></h2>
 				</header>
 				<div class="entry-content">
 				  <div class="instagram"></div>

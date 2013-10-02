@@ -1,0 +1,88 @@
+/* @license
+ * MyFonts Webfont Build ID 2587090, 2013-06-23T21:27:22-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Eurostile LT Pro Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/eurostile/pro-roman/
+ * Copyright: Copyright &#x00A9; 2007 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Eurostile is a trademark of Linotype GmbH and
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2587090
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2779d2");
+
+  
+@font-face {font-family: 'EurostileLTPro'; src: url('../fonts/2779D2_0_0.eot'); src: url('../fonts/2779D2_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2779D2_0_0.woff') format('woff'),url('../fonts/2779D2_0_0.ttf') format('truetype');}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  
+
+// MIXINS
+
+$big: 920px;
+$med: 400px;
+$no-side: 800px;
+
+
+@mixin bp($point) {
+  @if $point == big {
+    @media only screen and (min-width:  920px) { @content; }
+  }
+  @else if $point == med {
+   @media only screen and (min-width:  400px) { @content; }
+  }
+}
+
+//fonts "EurostileLTPro",
+
+$heading-text:  "EurostileLTPro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ 
+$body-text: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+
+$base-font-size: 16px;
+$big-screen-font-size: 13px;
+
+@mixin basefont {
+  font-size: $base-font-size;
+  @include bp(big) {
+    font-size: $big-screen-font-size;
+  }
+}
+
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+// Variables
+
+$padding: 20px;
+
+$default-float: left;
+
+$body-bg: url(../img/Background.jpg) repeat;
+
+$mcorange: rgb(242,125,0);
+$mcgrey: rgb(135,135,133);
+
+$primary-color: #111;
+$secondary-color: $mcgrey;
+
+.timeline-header, .timeline-footer { background: red; }
+

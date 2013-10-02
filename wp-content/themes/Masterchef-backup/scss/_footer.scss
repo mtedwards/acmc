@@ -1,0 +1,48 @@
+footer.full-width {
+  background: #222;
+  color: white;
+  padding: $padding 0;
+  text-align: center;
+  margin-top: 2*$padding;
+  
+  .follow {
+    margin-bottom: $padding;
+    h3 {
+      color: #fff;
+      display: inline-block;
+    }
+    
+    a {
+      position: relative;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      padding-right: 10px;
+      text-indent: -9999px;
+      &:hover {color:$mcorange;}
+      &:before {font-size: 1.8em;}
+    }
+    
+  }
+  p {
+    color: white;
+    a {
+      color: $mcgrey;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+ul.footer_logos {
+  list-style: none;
+  text-align: center;
+  li {
+    display: inline-block; 
+    margin-right: $padding;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
