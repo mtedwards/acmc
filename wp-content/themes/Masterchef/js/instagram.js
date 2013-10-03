@@ -71,7 +71,7 @@ if($('div.instagram')) {
     });
     
     return this;
-  };
+  }; 
 })(jQuery);
 
 
