@@ -1,15 +1,13 @@
-if($('div.instagram')) {
 /* Find the access token: http://www.pinceladasdaweb.com.br/instagram/access-token */
 (function ($){
   $.fn.instagram = function (options) {
     var that = this,
         apiEndpoint = "https://api.instagram.com/v1",
-        settings = {
-        };
+        settings = {};
         
     options && $.extend(settings, options);
     
-    function createPhotoElement(photo) {
+     function createPhotoElement(photo) {
       var image_url = photo.images.low_resolution.url; // 306 x 306
       //var image_url = photo.images.thumbnail.url; // 150 x 150
       //var image_url = photo.images.standard_resolution.url; // 612 x 612
@@ -71,46 +69,5 @@ if($('div.instagram')) {
     });
     
     return this;
-  }; 
+  };
 })(jQuery);
-
-
-}
-/*
-$('document').ready(function(){
-	$(function() {
-	  $(".instagram").instagram();	
-	 });
-});
-*/
-
-$(function(){
-  var
-    insta_container = $("div.instagram")
-  , insta_next_url
-
-  insta_container.instagram({
-      show : 18
-    , onComplete : function (photos, data) {
-      insta_next_url = data.pagination.next_url
-    }
-  })
-
-  $('button.more-instagram').on('click', function(){
-    var 
-      button = $(this)
-    , text = button.text()
-
-    if (button.text() != 'Loading…'){
-      button.text('Loading…')
-      insta_container.instagram({
-          next_url : insta_next_url
-        , show : 18
-        , onComplete : function(photos, data) {
-          insta_next_url = data.pagination.next_url
-          button.text(text)
-        }
-      })
-    }       
-  }) 
-});
