@@ -86,7 +86,7 @@
                 that.append(createPhotoElement(photo));
               }
               
-              that.after('<div style="clear:both; margin-top:20px; text-align:center;"><a href="#" class="button white insta-next"  data-next="' + url + '&max_like_id=' + next_link + '">More Photos</a></div>');
+              that.after('<div style="clear:both; margin-top:20px; text-align:center;"><a href="#" class="button white insta-next" style="width:300px; margin:0 auto;" data-next="' + url + '&max_like_id=' + next_link + '">More Photos</a></div>');
             
             
               $("body").on("click",".insta-next", function(event){
@@ -109,7 +109,7 @@
                               that.append(createPhotoElement(photo));
                             }
                             if(next_link){
-                              that.after('<div style="clear:both; margin-top:20px; text-align:center;"><a href="#" class="button white insta-next" data-next="' + url + '&max_like_id=' + next_link + '">More Photos</a></div');
+                              that.after('<div style="clear:both; margin-top:20px; text-align:center;"><a href="#" class="button white insta-next" style="width:300px; margin:0 auto;" data-next="' + url + '&max_like_id=' + next_link + '">More Photos</a></div');
                               } else {
                                 that.after('<div style="clear:both; margin-top:20px; text-align:center;"><h4>You\'ve reached the end.<br>Follow us on Instragram for more...<br><a href="http://instagram.com/MCDiningandBar" target="_blank">@MCDiningandBar</a></h4></div>');
                               }
